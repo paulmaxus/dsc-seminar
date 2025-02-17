@@ -1,0 +1,122 @@
+---
+title: "Research Engineering Support"
+author: "Max Paulus"
+format: 
+    revealjs:
+        #code-overflow: scroll
+        #logo:
+        incremental: true
+        theme: default
+        pdf-separate-fragments: true
+---
+
+## Inspiration
+
+::: {.r-stack}
+
+![](images/512px-2023_Obsidian_logo.svg.png){.fragment height="300"}
+
+![](images/Labyrint_barvaux.jpg){.fragment height="300"}
+
+:::
+
+::: aside
+Stephan Ango, CC BY 4.0 <https://creativecommons.org/licenses/by/4.0>, via Wikimedia Commons
+Benoit.dessucy, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons
+:::
+---
+
+## Recap 10 months in
+
+?
+
+---
+
+## Research Infrastructure Roles
+
+![The Turing Way Community. This illustration is created by Scriberia with The Turing Way community, used under a CC-BY 4.0 licence. DOI: 10.5281/zenodo.3332807](images/researchers-environment.jpg){height="450" fig-align="center"}
+
+---
+
+## Research software engineer
+
+:::: {.colunns}
+
+::: {.column}
+![](images/rse.png){height="450" fig-align="center"}
+:::
+
+::: {.column}
+- Researchers are not (necessarily) hired for their technical skills
+
+:::
+
+::::
+
+::: {.notes}
+https://the-turing-way.netlify.app/collaboration/research-infrastructure-roles/rse
+:::
+
+---
+
+## What is a research engineer?
+*as opposed to a Research Software Engineer*
+
+- Not just software (hardware, workflows, documentation)
+- more than 2-3 projects (PoCs!), no research focus necessarily
+- overlap with research application (/innovation) manager
+
+---
+
+## What is a RAM?
+
+![](images/research-application-managers.jpg){height="450" fig-align="center"}
+
+::: {.notes}
+https://the-turing-way.netlify.app/collaboration/research-infrastructure-roles/ram
+:::
+
+## Decision tree
+
+:::: {.columns}
+
+::: {.column}
+- Find existing software/solution
+- Preferrably open-source and active
+:::
+
+::: {.column}
+- Extend/Improve existing software
+- Build custom script/software
+:::
+
+::::
+
+---
+
+## Demo: SCED-meta
+
+Database(s) for meta studies
+- What are their needs, skills, budget?
+
+---
+
+## Summary: challenges
+
+- Good documentation: *Zijn de handleidingen nog te lezen?* ^[Marleen Stikker (2025) in Het Uur [podcast]. NRC]
+- Compromises: "does not do exactly what I need"
+- Costs
+
+::: aside
+
+:::
+
+---
+
+## Summary: Research research
+
+Research drive, Research cloud, Research storage, ...
+
+<img src="images/Labyrint_barvaux.jpg" height="200">
+
+---
