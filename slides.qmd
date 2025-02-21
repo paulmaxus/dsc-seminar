@@ -3,7 +3,6 @@ title: "Research Engineering Support"
 author: "Max Paulus"
 format: 
     revealjs:
-        #code-overflow: scroll
         #logo:
         incremental: true
         theme: default
@@ -40,33 +39,23 @@ Benoit.dessucy, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, v
 
 ## Research software engineer
 
-:::: {.colunns}
-
-::: {.column}
-![](images/rse.png){height="450" fig-align="center"}
-:::
-
-::: {.column}
 - Researchers are not (necessarily) hired for their technical skills
-
-:::
-
-::::
+- RSE is often used as a catch-all term, but there are more roles!
 
 ::: {.notes}
 https://the-turing-way.netlify.app/collaboration/research-infrastructure-roles/rse
 :::
 
----
 
-## What is a research engineer?
-*as opposed to a Research Software Engineer*
+## Data wrangler
+(Like a data engineer, but not exactly)
 
-- Not just software (hardware, workflows, documentation)
-- more than 2-3 projects (PoCs!), no research focus necessarily
-- overlap with research application (/innovation) manager
+- Data retrieval (scraping, databases), wrangling, analysis
+- Data pipelines and infrastructure (+ privacy and security)
 
----
+::: {.notes}
+https://the-turing-way.netlify.app/collaboration/research-infrastructure-roles/data-wrangler
+:::
 
 ## What is a RAM?
 
@@ -76,28 +65,62 @@ https://the-turing-way.netlify.app/collaboration/research-infrastructure-roles/r
 https://the-turing-way.netlify.app/collaboration/research-infrastructure-roles/ram
 :::
 
+## And in practice?
+
+Constraints
+
+- Funding might not allow for hiring specialist roles
+- Ongoing projects require a number of specific skills
+- Needs might change, projects and people come and go
+
+## So?
+(Discussion)
+
+- Hire people based on interests; diversity is key (within and between)
+- Room (and time) to grow into the role
+
+
+## What is a research engineer then?
+
+- Not just software (also hardware, consulting, documentation)
+- More than 2-3 projects (PoCs!), no research focus necessarily
+- Crossover of RSE, data wrangler, research application manager
+
+
 ## Decision tree
 
-:::: {.columns}
-
-::: {.column}
-- Find existing software/solution
+- Find existing software/solution; promote
 - Preferrably open-source and active
-:::
-
-::: {.column}
+- Find the developers maintainers; connect
+- Proof of concept for current case
 - Extend/Improve existing software
 - Build custom script/software
-:::
-
-::::
 
 ---
+
+## Proof of concepts
+
+- Be ready for when there's a need
+- Lab philosophy: experimenting, testing
+- Modular! 
+    - Small independent components that can be stacked together if needed
+
+::: {.notes}
+What's the point of having one complex piece of software if the project ends. 
+:::
 
 ## Demo: SCED-meta
 
 Database(s) for meta studies
 - What are their needs, skills, budget?
+
+---
+
+Turns out that other projects needed a similar solution
+
+- cheap database, easy to maintain
+- 2FA on Research Cloud
+- website (hosting)
 
 ---
 
