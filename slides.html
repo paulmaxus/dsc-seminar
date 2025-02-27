@@ -337,20 +337,8 @@ Max Paulus
 </div>
 
 </section>
-<section id="inspiration" class="slide level2">
-<h2>Inspiration</h2>
-<div class="r-stack">
-<p><img data-src="images/512px-2023_Obsidian_logo.svg.png" class="fragment" height="300"></p>
-<p><img data-src="images/Labyrint_barvaux.jpg" class="fragment" height="300"></p>
-</div>
 
-<aside><div>
-<p>Stephan Ango, CC BY 4.0 <a href="https://creativecommons.org/licenses/by/4.0" class="uri">https://creativecommons.org/licenses/by/4.0</a>, via Wikimedia Commons Benoit.dessucy, CC BY-SA 3.0 <a href="https://creativecommons.org/licenses/by-sa/3.0" class="uri">https://creativecommons.org/licenses/by-sa/3.0</a>, via Wikimedia Commons</p>
-</div></aside></section>
-<section id="recap-10-months-in" class="slide level2">
-<h2>Recap 10 months in</h2>
-<p>?</p>
-</section>
+
 <section id="research-infrastructure-roles" class="slide level2">
 <h2>Research Infrastructure Roles</h2>
 <div class="quarto-figure quarto-figure-center">
@@ -362,18 +350,10 @@ Max Paulus
 </section>
 <section id="research-software-engineer" class="slide level2">
 <h2>Research software engineer</h2>
-<div class="colunns">
-<div class="column">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/rse.png" class="quarto-figure quarto-figure-center" height="450"></p>
-</figure>
-</div>
-</div><div class="column">
 <ul>
 <li class="fragment">Researchers are not (necessarily) hired for their technical skills</li>
+<li class="fragment">RSE is often used as a catch-all term, but there are more roles!</li>
 </ul>
-</div></div>
 <aside class="notes">
 <p>https://the-turing-way.netlify.app/collaboration/research-infrastructure-roles/rse</p>
 <style type="text/css">
@@ -388,14 +368,26 @@ Max Paulus
           display:block!important;
       }</style></aside>
 </section>
-<section id="what-is-a-research-engineer" class="slide level2">
-<h2>What is a research engineer?</h2>
-<p><em>as opposed to a Research Software Engineer</em></p>
+<section id="data-wrangler" class="slide level2">
+<h2>Data wrangler</h2>
+<p>(Like a data engineer, but not exactly)</p>
 <ul>
-<li class="fragment">Not just software (hardware, workflows, documentation)</li>
-<li class="fragment">more than 2-3 projects (PoCs!), no research focus necessarily</li>
-<li class="fragment">overlap with research application (/innovation) manager</li>
+<li class="fragment">Data retrieval (scraping, databases), wrangling, analysis</li>
+<li class="fragment">Data pipelines and infrastructure (+ privacy and security)</li>
 </ul>
+<aside class="notes">
+<p>https://the-turing-way.netlify.app/collaboration/research-infrastructure-roles/data-wrangler</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="what-is-a-ram" class="slide level2">
 <h2>What is a RAM?</h2>
@@ -418,24 +410,78 @@ Max Paulus
           display:block!important;
       }</style></aside>
 </section>
+<section id="and-in-practice" class="slide level2">
+<h2>And in practice?</h2>
+<p>Constraints</p>
+<ul>
+<li class="fragment">Funding might not allow for hiring specialist roles</li>
+<li class="fragment">Ongoing projects require a number of specific skills</li>
+<li class="fragment">Needs might change, projects and people come and go</li>
+</ul>
+</section>
+<section id="so" class="slide level2">
+<h2>So?</h2>
+<p>(Discussion)</p>
+<ul>
+<li class="fragment">Hire people based on interests/curiosity</li>
+<li class="fragment">Room (and time) to grow in the role</li>
+</ul>
+</section>
+<section id="what-is-a-research-engineer-then" class="slide level2">
+<h2>What is a research engineer then?</h2>
+<ul>
+<li class="fragment">Generalist: not just software (also hardware, consulting, documentation)</li>
+<li class="fragment">More than 2-3 projects (PoCs!), no research focus necessarily</li>
+<li class="fragment">Crossover of RSE, data wrangler, research application manager</li>
+</ul>
+</section>
 <section id="decision-tree" class="slide level2">
 <h2>Decision tree</h2>
-<div class="columns">
-<div class="column">
 <ul>
-<li class="fragment">Find existing software/solution</li>
+<li class="fragment">Find existing software/solution; promote</li>
 <li class="fragment">Preferrably open-source and active</li>
-</ul>
-</div><div class="column">
-<ul>
+<li class="fragment">Find the developers/maintainers; connect</li>
+<li class="fragment">Proof of concept for current case</li>
 <li class="fragment">Extend/Improve existing software</li>
 <li class="fragment">Build custom script/software</li>
 </ul>
-</div></div>
+</section>
+<section id="proof-of-concepts" class="slide level2">
+<h2>Proof of concepts</h2>
+<ul>
+<li class="fragment">Be ready for when there’s a need</li>
+<li class="fragment">Lab philosophy: experimenting, testing</li>
+<li class="fragment">Modular!
+<ul>
+<li class="fragment">Small independent components that can be stacked together if needed</li>
+</ul></li>
+</ul>
+<aside class="notes">
+<p>What’s the point of having one complex piece of software if the project ends.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="demo-sced-meta" class="slide level2">
 <h2>Demo: SCED-meta</h2>
 <p>Database(s) for meta studies - What are their needs, skills, budget?</p>
+</section>
+<section class="slide level2">
+
+<p>Turns out that other projects needed a similar solution</p>
+<ul>
+<li class="fragment">cheap database, easy to maintain</li>
+<li class="fragment">2FA on Research Cloud</li>
+<li class="fragment">website (hosting)</li>
+</ul>
 </section>
 <section id="summary-challenges" class="slide level2">
 <h2>Summary: challenges</h2>
@@ -448,8 +494,8 @@ Max Paulus
 <aside><div>
 
 </div><ol class="aside-footnotes"><li id="fn1"><p>Marleen Stikker (2025) in Het Uur [podcast]. NRC</p></li></ol></aside></section>
-<section id="summary-research-research" class="slide level2">
-<h2>Summary: Research research</h2>
+<section id="summary-challenges-1" class="slide level2">
+<h2>Summary: challenges</h2>
 <p>Research drive, Research cloud, Research storage, …</p>
 <p><img src="images/Labyrint_barvaux.jpg" height="200"></p>
 </section>
