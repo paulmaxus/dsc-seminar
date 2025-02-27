@@ -9,7 +9,7 @@ format:
         pdf-separate-fragments: true
 ---
 
-## Inspiration
+## Inspiration {visibility="hidden"}
 
 ::: {.r-stack}
 
@@ -25,7 +25,7 @@ Benoit.dessucy, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, v
 :::
 ---
 
-## Recap 10 months in
+## Recap 10 months in {visibility="hidden"}
 
 ?
 
@@ -76,13 +76,13 @@ Constraints
 ## So?
 (Discussion)
 
-- Hire people based on interests; diversity is key (within and between)
-- Room (and time) to grow into the role
+- Hire people based on interests/curiosity 
+- Room (and time) to grow in the role
 
 
 ## What is a research engineer then?
 
-- Not just software (also hardware, consulting, documentation)
+- Generalist: not just software (also hardware, consulting, documentation)
 - More than 2-3 projects (PoCs!), no research focus necessarily
 - Crossover of RSE, data wrangler, research application manager
 
@@ -91,7 +91,7 @@ Constraints
 
 - Find existing software/solution; promote
 - Preferrably open-source and active
-- Find the developers maintainers; connect
+- Find the developers/maintainers; connect
 - Proof of concept for current case
 - Extend/Improve existing software
 - Build custom script/software
@@ -136,7 +136,7 @@ Turns out that other projects needed a similar solution
 
 ---
 
-## Summary: Research research
+## Summary: challenges
 
 Research drive, Research cloud, Research storage, ...
 
