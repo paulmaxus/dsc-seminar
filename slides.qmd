@@ -4,12 +4,13 @@ author: "Max Paulus"
 format: 
     revealjs:
         #logo:
-        incremental: true
+        incremental: false
         theme: default
         pdf-separate-fragments: true
+        navigation-mode: vertical
 ---
 
-## Inspiration {visibility="hidden"}
+# Inspiration {visibility="hidden"}
 
 ::: {.r-stack}
 
@@ -23,41 +24,51 @@ format:
 Stephan Ango, CC BY 4.0 <https://creativecommons.org/licenses/by/4.0>, via Wikimedia Commons
 Benoit.dessucy, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons
 :::
----
 
-## Recap 10 months in {visibility="hidden"}
+# Agenda
 
-?
+- Research support/infrastructure roles
+	- Research engineering (roadmap and practical info)
+- Research software and infrastructure
+- Training: the Carpentries
+- Lessons / Challenges / Discussion
 
----
-
-## Research Infrastructure Roles
+# Research Infrastructure Roles
 
 ![The Turing Way Community. This illustration is created by Scriberia with The Turing Way community, used under a CC-BY 4.0 licence. DOI: 10.5281/zenodo.3332807](images/researchers-environment.jpg){height="450" fig-align="center"}
 
----
+# Research software engineer
 
-## Research software engineer
+[LCRDM report](https://zenodo.org/records/15052095):
 
-- Researchers are not (necessarily) hired for their technical skills
-- RSE is often used as a catch-all term, but there are more roles!
+The role of RSEs varies across Dutch institutions and projects. Some are deeply embedded in research teams, **developing new software and advising researchers** ... Others focus on **support and training, guiding researchers on software best practices**, including version control, testing, documentation, and FAIR principles.
+
+*This variety in roles reflects the diverse ways institutions have implemented RSE positions, tailored to their local research needs.*
 
 ::: {.notes}
+
+This roles (and research support roles in general) are hard to capture with a single title, so why should you?
+
 https://the-turing-way.netlify.app/collaboration/research-infrastructure-roles/rse
 :::
 
+# Other roles
+
+Data wrangler, Research application manager, data steward
 
 ## Data wrangler
-(Like a data engineer, but not exactly)
+
+![](images/data-wrangler.jpg){height="450" fig-align="center"}
+
+::: {.notes}
 
 - Data retrieval (scraping, databases), wrangling, analysis
 - Data pipelines and infrastructure (+ privacy and security)
 
-::: {.notes}
 https://the-turing-way.netlify.app/collaboration/research-infrastructure-roles/data-wrangler
 :::
 
-## What is a RAM?
+## RAM
 
 ![](images/research-application-managers.jpg){height="450" fig-align="center"}
 
@@ -65,7 +76,7 @@ https://the-turing-way.netlify.app/collaboration/research-infrastructure-roles/d
 https://the-turing-way.netlify.app/collaboration/research-infrastructure-roles/ram
 :::
 
-## And in practice?
+# And in practice? {visibility="hidden"}
 
 Constraints
 
@@ -73,21 +84,44 @@ Constraints
 - Ongoing projects require a number of specific skills
 - Needs might change, projects and people come and go
 
-## So?
-(Discussion)
+# Research engineer @ FMG
 
-- Hire people based on interests/curiosity 
-- Room (and time) to grow in the role
+Crossover of RSE, data wrangler, research application manager
+
+---
+
+[Matthijs Moed (SURF)](https://blog.esciencecenter.nl/open-science-festival-what-infrastructures-do-we-need-to-preserve-research-software-7c181404f310)
+
+> At SURF, we build tools that fit in the workflow of researchers. Our biggest challenge is finding out what researchers actually need and how they can use our tools in their work.
+
+**That's the role research engineers have to take**
+
+# Research Engineering Service @ FMG
+
+- Consultancy: < 1 hour
+- Short-term projects: days/weeks
+- Long-term projects: infrastructure development
+
+---
+
+[UU research engineers](https://www.uu.nl/en/research/research-data-management/support/research-engineers)
+
+*We act as a **knowledge hub** where expertise gained in temporary projects are safeguarded and used for cross-pollination across domains. At the same time, we provide a collaborative community for researchers and IT staff at Utrecht University.*
+
+::: {.notes}
+
+This term applies to our service too
+
+:::
+
+# What is research software?
+
+From the LCRDM report:
+
+*it \[research software] **contains the research process**: data is collected, read, preprocessed, analyzed, visualized and simulated using research software*
 
 
-## What is a research engineer then?
-
-- Generalist: not just software (also hardware, consulting, documentation)
-- More than 2-3 projects (PoCs!), no research focus necessarily
-- Crossover of RSE, data wrangler, research application manager
-
-
-## Decision tree
+# Decision tree {visibility="hidden"}
 
 - Find existing software/solution; promote
 - Preferrably open-source and active
@@ -96,9 +130,7 @@ Constraints
 - Extend/Improve existing software
 - Build custom script/software
 
----
-
-## Proof of concepts
+# Proof of concepts {visibility="hidden"}
 
 - Be ready for when there's a need
 - Lab philosophy: experimenting, testing
@@ -109,12 +141,10 @@ Constraints
 What's the point of having one complex piece of software if the project ends. 
 :::
 
-## Demo: SCED-meta
+# Demo: SCED-meta {visibility="hidden"}
 
 Database(s) for meta studies
 - What are their needs, skills, budget?
-
----
 
 Turns out that other projects needed a similar solution
 
@@ -122,24 +152,6 @@ Turns out that other projects needed a similar solution
 - 2FA on Research Cloud
 - website (hosting)
 
----
-
-## Summary: challenges
-
-- Good documentation: *Zijn de handleidingen nog te lezen?* ^[Marleen Stikker (2025) in Het Uur [podcast]. NRC]
-- Compromises: "does not do exactly what I need"
-- Costs
-
-::: aside
-
-:::
-
----
-
-## Summary: challenges
-
-Research drive, Research cloud, Research storage, ...
+# Challenges
 
 <img src="images/Labyrint_barvaux.jpg" height="200">
-
----
