@@ -3,11 +3,12 @@ title: "Research Engineering Support"
 author: "Max Paulus"
 format: 
     revealjs:
-        #logo:
         incremental: false
         theme: default
         pdf-separate-fragments: true
         navigation-mode: vertical
+        mermaid:
+            theme: neutral
 ---
 
 # Inspiration {visibility="hidden"}
@@ -28,7 +29,6 @@ Benoit.dessucy, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, v
 # Agenda
 
 - Research support/infrastructure roles
-	- Research engineering (roadmap and practical info)
 - Research software and infrastructure
 - Training: the Carpentries
 - Lessons / Challenges / Discussion
@@ -46,8 +46,7 @@ The role of RSEs varies across Dutch institutions and projects. Some are deeply 
 *This variety in roles reflects the diverse ways institutions have implemented RSE positions, tailored to their local research needs.*
 
 ::: {.notes}
-
-This roles (and research support roles in general) are hard to capture with a single title, so why should you?
+This role (and research support roles in general) are hard to capture with a single title
 
 https://the-turing-way.netlify.app/collaboration/research-infrastructure-roles/rse
 :::
@@ -94,7 +93,7 @@ Crossover of RSE, data wrangler, research application manager
 
 > At SURF, we build tools that fit in the workflow of researchers. Our biggest challenge is finding out what researchers actually need and how they can use our tools in their work.
 
-**That's the role research engineers have to take**
+**That's the role of research engineers**
 
 # Research Engineering Service @ FMG
 
@@ -104,22 +103,24 @@ Crossover of RSE, data wrangler, research application manager
 
 ---
 
-[UU research engineers](https://www.uu.nl/en/research/research-data-management/support/research-engineers)
-
 *We act as a **knowledge hub** where expertise gained in temporary projects are safeguarded and used for cross-pollination across domains. At the same time, we provide a collaborative community for researchers and IT staff at Utrecht University.*
 
+[UU research engineers](https://www.uu.nl/en/research/research-data-management/support/research-engineers)
+
+---
+
+Our **knowledge hub**: recent examples
+
+- internal database, research cloud, android app
+- proof of concepts
+
 ::: {.notes}
-
-This term applies to our service too
-
+- database: duckdb; for small projects with tight budgets
+    - ended up not using it for this project, but it is now part of our "knowledge hub"
+- research cloud: cost-efficient way to deploy web applications, collaborate
+- anroid app for controlling movement sensors
+- PoC: be ready for when there's a need; modular: small independent components that can be stacked together if needed
 :::
-
-# What is research software?
-
-From the LCRDM report:
-
-*it \[research software] **contains the research process**: data is collected, read, preprocessed, analyzed, visualized and simulated using research software*
-
 
 # Decision tree {visibility="hidden"}
 
@@ -130,27 +131,116 @@ From the LCRDM report:
 - Extend/Improve existing software
 - Build custom script/software
 
-# Proof of concepts {visibility="hidden"}
-
-- Be ready for when there's a need
-- Lab philosophy: experimenting, testing
-- Modular! 
-    - Small independent components that can be stacked together if needed
-
 ::: {.notes}
 What's the point of having one complex piece of software if the project ends. 
 :::
 
-# Demo: SCED-meta {visibility="hidden"}
+# What is research software?
 
-Database(s) for meta studies
-- What are their needs, skills, budget?
+From the LCRDM report:
 
-Turns out that other projects needed a similar solution
+*it \[research software] **contains the research process**: data is collected, read, preprocessed, analyzed, visualized and simulated using research software*
 
-- cheap database, easy to maintain
-- 2FA on Research Cloud
-- website (hosting)
+---
+
+<iframe class="stretch" data-src="https://jupyter.org/try-jupyter/lab/"></iframe>
+
+---
+
+## Software is a form of data
+
+- can be stored, loaded, processed
+- used as input or output (of other software)
+- but: it is a complex type of data
+    - context
+    - dependencies
+    - maintenance
+
+::: aside
+Adapted from Netherlands eScience Center, CC-BY 4.0
+:::
+
+::: {.notes}
+- can only be interpreted in the context of what it does, not on its content alone (-> instructions)
+- it is usually dependent on other software (components)
+- requires [maintenance](https://esciencecenter-digital-skills.github.io/research-software-support/modules/researchsoftware/slides-software#/4/4), is dynamic
+:::
+
+# Software as components of instruments
+
+[Blog](https://blog.esciencecenter.nl/defining-the-roles-of-research-software-21535a43f23)
+
+- instruments: MRI-scanner, data donation (virtual)
+- software components: UI, server, database, ...
+
+*Or more generally, research software components organize, serve, and provide access to data*
+
+# Infrastructure software vs. software infrastructure
+
+- compilers and programming languages
+- generic software libraries
+- code repositories, data repositories
+- and open source software in general
+
+---
+
+*Free, publicly available source code is the infrastructure on which all of digital society relies. It is vital to the functioning of governments, private companies, and individual lives.* 
+
+[Ford Foundation](https://www.fordfoundation.org/work/learning/research-reports/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure/)
+
+![xkcd.com](images/dependency.png){height="450" fig-align="center"}
+
+::: aside
+:::
+
+---
+
+```{dot}
+digraph G {
+    notebook -> javascript;
+    pandas -> numpy
+    numpy -> python;
+    ipk [label="ipython-kernel"];
+    ipk -> python;
+    tornado -> python;
+    python -> os;
+    os [label="windows/linux/macOS"];
+    os -> platform;
+    platform [label="?"];
+}
+```
+
+---
+
+The "?" can be
+
+- a laptop
+- a cloud service
+- a container (software infrastructure software?)
+- a container on the cloud
+
+---
+
+Example: 4CAT vs. script
+
+```{dot}
+digraph G {
+    laptop [color=red]; 
+    laptop -> cloud [label="no"];
+    cloud -> SaaS [label="?"]; 
+    SaaS [color=red];
+    cloud -> container [label="?"];
+
+}
+```
+
+::: {.notes}
+- runs on laptop? no, multiple people need access + runs over night
+- software as a service (SaaS), e.g. Next (with data processing agreement)
+
+:::
+
+# The Carpentries
 
 # Challenges
 
