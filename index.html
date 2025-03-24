@@ -184,7 +184,7 @@ Max Paulus
 <section>
 <section id="other-roles" class="title-slide slide level1 center">
 <h1>Other roles</h1>
-<p>Data wrangler, Research application manager, data steward</p>
+<p>Data wrangler, Research application manager, Data steward</p>
 </section>
 <section id="data-wrangler" class="slide level2">
 <h2>Data wrangler</h2>
@@ -237,13 +237,13 @@ Max Paulus
 <section>
 <section id="research-engineer-fmg" class="title-slide slide level1 center">
 <h1>Research engineer @ FMG</h1>
-<p>Crossover of RSE, data wrangler, research application manager</p>
+<p>RSE, data wrangler &amp; research application manager?</p>
 </section>
 <section class="slide level2">
 
 <p><a href="https://blog.esciencecenter.nl/open-science-festival-what-infrastructures-do-we-need-to-preserve-research-software-7c181404f310">Matthijs Moed (SURF)</a></p>
 <blockquote>
-<p>At SURF, we build tools that fit in the workflow of researchers. Our biggest challenge is finding out what researchers actually need and how they can use our tools in their work.</p>
+<p>We build tools that fit in the workflow of researchers. Our biggest challenge is finding out what researchers actually need and how they can use our tools in their work.</p>
 </blockquote>
 <p><strong>That’s the role of research engineers</strong></p>
 </section></section>
@@ -258,7 +258,7 @@ Max Paulus
 </section>
 <section class="slide level2">
 
-<p><em>We act as a <strong>knowledge hub</strong> where expertise gained in temporary projects are safeguarded and used for cross-pollination across domains. At the same time, we provide a collaborative community for researchers and IT staff at Utrecht University.</em></p>
+<p><em>We act as a <strong>knowledge hub</strong> where expertise gained in temporary projects are safeguarded and used for cross-pollination across domains.</em></p>
 <p><a href="https://www.uu.nl/en/research/research-data-management/support/research-engineers">UU research engineers</a></p>
 </section>
 <section class="slide level2">
@@ -275,7 +275,7 @@ Max Paulus
 <li>ended up not using it for this project, but it is now part of our “knowledge hub”</li>
 </ul></li>
 <li>research cloud: cost-efficient way to deploy web applications, collaborate</li>
-<li>anroid app for controlling movement sensors</li>
+<li>android app for controlling movement sensors</li>
 <li>PoC: be ready for when there’s a need; modular: small independent components that can be stacked together if needed</li>
 </ul>
 <style type="text/css">
@@ -497,60 +497,102 @@ Max Paulus
 </section>
 <section class="slide level2">
 
-<p>Example: 4CAT vs.&nbsp;script</p>
+<aside class="notes">
+<ul>
+<li>what is a container? think of it as a computer running on another computer with specific software pre-installed</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<p>Example: app vs.&nbsp;script</p>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
 <p></p><figure class=""><p></p>
 <div>
-<svg width="960" height="480" viewbox="0.00 0.00 180.31 221.60" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none; display: block; margin: auto auto auto auto">
+<svg width="960" height="480" viewbox="0.00 0.00 310.52 221.60" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none; display: block; margin: auto auto auto auto">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 217.6)">
 <title>G</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-217.6 176.31,-217.6 176.31,4 -4,4"></polygon>
-<!-- laptop -->
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-217.6 306.52,-217.6 306.52,4 -4,4"></polygon>
+<!-- app -->
 <g id="node1" class="node">
+<title>app</title>
+<ellipse fill="none" stroke="black" cx="132.17" cy="-195.6" rx="27" ry="18"></ellipse>
+<text text-anchor="middle" x="132.17" y="-191.4" font-family="Times,serif" font-size="14.00">app</text>
+</g>
+<!-- laptop -->
+<g id="node2" class="node">
 <title>laptop</title>
-<ellipse fill="none" stroke="red" cx="77.35" cy="-195.6" rx="35.35" ry="18"></ellipse>
-<text text-anchor="middle" x="77.35" y="-191.4" font-family="Times,serif" font-size="14.00">laptop</text>
+<ellipse fill="none" stroke="red" cx="35.17" cy="-106.8" rx="35.35" ry="18"></ellipse>
+<text text-anchor="middle" x="35.17" y="-102.6" font-family="Times,serif" font-size="14.00">laptop</text>
+</g>
+<!-- app&#45;&gt;laptop -->
+<g id="edge1" class="edge">
+<title>app-&gt;laptop</title>
+<path fill="none" stroke="black" d="M114.14,-181.89C105.39,-175.5 94.88,-167.45 85.96,-159.6 75.77,-150.63 65.15,-140.03 56.28,-130.76"></path>
+<polygon fill="black" stroke="black" points="58.69,-128.22 49.28,-123.35 53.6,-133.02 58.69,-128.22"></polygon>
+<text text-anchor="middle" x="89.28" y="-147" font-family="Times,serif" font-size="14.00">?</text>
 </g>
 <!-- cloud -->
-<g id="node2" class="node">
-<title>cloud</title>
-<ellipse fill="none" stroke="black" cx="77.35" cy="-106.8" rx="32.48" ry="18"></ellipse>
-<text text-anchor="middle" x="77.35" y="-102.6" font-family="Times,serif" font-size="14.00">cloud</text>
-</g>
-<!-- laptop&#45;&gt;cloud -->
-<g id="edge1" class="edge">
-<title>laptop-&gt;cloud</title>
-<path fill="none" stroke="black" d="M77.35,-177.45C77.35,-165.32 77.35,-148.82 77.35,-134.92"></path>
-<polygon fill="black" stroke="black" points="80.85,-134.91 77.35,-124.91 73.85,-134.91 80.85,-134.91"></polygon>
-<text text-anchor="middle" x="84.35" y="-147" font-family="Times,serif" font-size="14.00">no</text>
-</g>
-<!-- SaaS -->
 <g id="node3" class="node">
-<title>SaaS</title>
-<ellipse fill="none" stroke="red" cx="30.35" cy="-18" rx="30.2" ry="18"></ellipse>
-<text text-anchor="middle" x="30.35" y="-13.8" font-family="Times,serif" font-size="14.00">SaaS</text>
+<title>cloud</title>
+<ellipse fill="none" stroke="green" cx="177.17" cy="-18" rx="32.48" ry="18"></ellipse>
+<text text-anchor="middle" x="177.17" y="-13.8" font-family="Times,serif" font-size="14.00">cloud</text>
 </g>
-<!-- cloud&#45;&gt;SaaS -->
+<!-- app&#45;&gt;cloud -->
 <g id="edge2" class="edge">
-<title>cloud-&gt;SaaS</title>
-<path fill="none" stroke="black" d="M68.51,-89.47C61.62,-76.74 51.92,-58.84 44.03,-44.26"></path>
-<polygon fill="black" stroke="black" points="46.99,-42.38 39.15,-35.25 40.83,-45.71 46.99,-42.38"></polygon>
-<text text-anchor="middle" x="61.46" y="-58.2" font-family="Times,serif" font-size="14.00">?</text>
+<title>app-&gt;cloud</title>
+<path fill="none" stroke="black" d="M124.46,-178.3C115.53,-157.06 103.43,-119.06 114.96,-88.8 122.26,-69.65 137.48,-52.42 151.04,-39.86"></path>
+<polygon fill="black" stroke="black" points="153.59,-42.28 158.77,-33.03 148.96,-37.04 153.59,-42.28"></polygon>
+<text text-anchor="middle" x="118.28" y="-102.6" font-family="Times,serif" font-size="14.00">?</text>
 </g>
 <!-- container -->
 <g id="node4" class="node">
 <title>container</title>
-<ellipse fill="none" stroke="black" cx="125.35" cy="-18" rx="46.92" ry="18"></ellipse>
-<text text-anchor="middle" x="125.35" y="-13.8" font-family="Times,serif" font-size="14.00">container</text>
+<ellipse fill="none" stroke="green" cx="177.17" cy="-106.8" rx="46.92" ry="18"></ellipse>
+<text text-anchor="middle" x="177.17" y="-102.6" font-family="Times,serif" font-size="14.00">container</text>
 </g>
-<!-- cloud&#45;&gt;container -->
+<!-- app&#45;&gt;container -->
 <g id="edge3" class="edge">
-<title>cloud-&gt;container</title>
-<path fill="none" stroke="black" d="M86.38,-89.47C93.33,-76.9 103.07,-59.29 111.07,-44.82"></path>
-<polygon fill="black" stroke="black" points="114.26,-46.29 116.04,-35.85 108.13,-42.9 114.26,-46.29"></polygon>
-<text text-anchor="middle" x="108.46" y="-58.2" font-family="Times,serif" font-size="14.00">?</text>
+<title>app-&gt;container</title>
+<path fill="none" stroke="black" d="M140.64,-178.27C147.15,-165.7 156.29,-148.09 163.79,-133.62"></path>
+<polygon fill="black" stroke="black" points="166.95,-135.13 168.44,-124.65 160.73,-131.91 166.95,-135.13"></polygon>
+<text text-anchor="middle" x="162.28" y="-147" font-family="Times,serif" font-size="14.00">?</text>
+</g>
+<!-- SaaS -->
+<g id="node5" class="node">
+<title>SaaS</title>
+<ellipse fill="none" stroke="red" cx="272.17" cy="-106.8" rx="30.2" ry="18"></ellipse>
+<text text-anchor="middle" x="272.17" y="-102.6" font-family="Times,serif" font-size="14.00">SaaS</text>
+</g>
+<!-- app&#45;&gt;SaaS -->
+<g id="edge4" class="edge">
+<title>app-&gt;SaaS</title>
+<path fill="none" stroke="black" d="M151.35,-182.71C175.03,-168.03 215.55,-142.9 243.08,-125.84"></path>
+<polygon fill="black" stroke="black" points="245.22,-128.63 251.87,-120.39 241.53,-122.68 245.22,-128.63"></polygon>
+<text text-anchor="middle" x="218.28" y="-147" font-family="Times,serif" font-size="14.00">?</text>
+</g>
+<!-- container&#45;&gt;cloud -->
+<g id="edge6" class="edge">
+<title>container-&gt;cloud</title>
+<path fill="none" stroke="black" d="M177.17,-88.65C177.17,-76.52 177.17,-60.02 177.17,-46.12"></path>
+<polygon fill="black" stroke="black" points="180.67,-46.11 177.17,-36.11 173.67,-46.11 180.67,-46.11"></polygon>
+<text text-anchor="middle" x="180.28" y="-58.2" font-family="Times,serif" font-size="14.00">?</text>
+</g>
+<!-- SaaS&#45;&gt;cloud -->
+<g id="edge5" class="edge">
+<title>SaaS-&gt;cloud</title>
+<path fill="none" stroke="black" d="M256.06,-91.08C240.91,-77.23 218.05,-56.35 200.83,-40.62"></path>
+<polygon fill="black" stroke="black" points="203.11,-37.96 193.37,-33.8 198.39,-43.13 203.11,-37.96"></polygon>
+<text text-anchor="middle" x="236.28" y="-58.2" font-family="Times,serif" font-size="14.00">?</text>
 </g>
 </g>
 </svg>
@@ -578,14 +620,121 @@ Max Paulus
 </section></section>
 <section id="the-carpentries" class="title-slide slide level1 center">
 <h1>The Carpentries</h1>
-
+<p>What is <a href="https://carpentries.org/about-us/">the Carpentries</a>?</p>
+<p><strong>Foundational coding and data science skills for research</strong></p>
+<ul>
+<li>open, community-built lessons
+<ul>
+<li>learn-by-doing</li>
+<li>live-coding</li>
+</ul></li>
+<li>train the trainer</li>
+<li>network, community</li>
+</ul>
 </section>
 
+<section>
+<section id="what-can-you-learn-in-4-days" class="title-slide slide level1 center">
+<h1>What can you learn in 4 days?</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/carpentries_pre_post.png" class="quarto-figure quarto-figure-center" height="450"></p>
+</figure>
+</div>
+<aside class="notes">
+<ul>
+<li>tendency for improving self-sufficiency skills</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section class="slide level2">
+
+<p>Other feedback:</p>
+<ul>
+<li>comfortable learning environment</li>
+<li>less so: immediate applicability</li>
+</ul>
+</section></section>
+<section>
+<section id="digital-literacy" class="title-slide slide level1 center">
+<h1>Digital literacy</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/file-not-found.png" height="450"></p>
+<figcaption>https://www.theverge.com/22684730/students-file-folder-directory-structure-education-gen-z</figcaption>
+</figure>
+</div>
+<aside class="notes">
+
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section class="slide level2">
+
+<p><em>As the student begins assembling their resources for the assignment, they may not be able to conveniently locate the relevant information if it is spread across web-based organizational tools, a variety of personal computer locations and devices, and bookmarked web pages</em></p>
+
+<aside><div>
+<p>Cole, C., Mross, E., &amp; Pritt, A. (2024). The Myth of the ’Born Digital’: Addressing Student Computer and Digital Literacy. Journal of New Librarianship, 9(2), 1–13. https://doi.org/10.33011/newlibs/17/1</p>
+</div></aside></section>
+<section class="slide level2">
+
+<p>Where is my software running?</p>
+<p><strong>Understanding (infrastructure) software as components</strong></p>
+<ul>
+<li>self-suffciency</li>
+<li>awareness re maintenance</li>
+<li>privacy and security</li>
+</ul>
+</section></section>
+<section>
+<section id="lessons-learned" class="title-slide slide level1 center">
+<h1>Lessons learned</h1>
+<ul>
+<li>Importance of software management (training)</li>
+<li>Impact of live coding (learn-by-doing approach)</li>
+</ul>
+</section>
+<aside class="notes">
+<ul>
+<li>software management in the broadest sense, e.g.&nbsp;file directories</li>
+<li>live coding in consulting can also mean setting up a cloud workspace</li>
+</ul>
 <section id="challenges" class="title-slide slide level1 center">
 <h1>Challenges</h1>
 <p><img src="images/Labyrint_barvaux.jpg" height="200"></p>
 
 </section>
+
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
