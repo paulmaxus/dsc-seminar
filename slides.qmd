@@ -53,7 +53,7 @@ https://the-turing-way.netlify.app/collaboration/research-infrastructure-roles/r
 
 # Other roles
 
-Data wrangler, Research application manager, data steward
+Data wrangler, Research application manager, Data steward
 
 ## Data wrangler
 
@@ -85,13 +85,13 @@ Constraints
 
 # Research engineer @ FMG
 
-Crossover of RSE, data wrangler, research application manager
+RSE, data wrangler & research application manager?
 
 ---
 
 [Matthijs Moed (SURF)](https://blog.esciencecenter.nl/open-science-festival-what-infrastructures-do-we-need-to-preserve-research-software-7c181404f310)
 
-> At SURF, we build tools that fit in the workflow of researchers. Our biggest challenge is finding out what researchers actually need and how they can use our tools in their work.
+> We build tools that fit in the workflow of researchers. Our biggest challenge is finding out what researchers actually need and how they can use our tools in their work.
 
 **That's the role of research engineers**
 
@@ -103,7 +103,7 @@ Crossover of RSE, data wrangler, research application manager
 
 ---
 
-*We act as a **knowledge hub** where expertise gained in temporary projects are safeguarded and used for cross-pollination across domains. At the same time, we provide a collaborative community for researchers and IT staff at Utrecht University.*
+*We act as a **knowledge hub** where expertise gained in temporary projects are safeguarded and used for cross-pollination across domains.*
 
 [UU research engineers](https://www.uu.nl/en/research/research-data-management/support/research-engineers)
 
@@ -118,7 +118,7 @@ Our **knowledge hub**: recent examples
 - database: duckdb; for small projects with tight budgets
     - ended up not using it for this project, but it is now part of our "knowledge hub"
 - research cloud: cost-efficient way to deploy web applications, collaborate
-- anroid app for controlling movement sensors
+- android app for controlling movement sensors
 - PoC: be ready for when there's a need; modular: small independent components that can be stacked together if needed
 :::
 
@@ -221,26 +221,94 @@ The "?" can be
 
 ---
 
-Example: 4CAT vs. script
+::: {.notes}
+- what is a container? think of it as a computer running on another computer with specific software pre-installed
+:::
+
+Example: app vs. script
 
 ```{dot}
 digraph G {
+    app -> laptop [label="?"];
     laptop [color=red]; 
-    laptop -> cloud [label="no"];
-    cloud -> SaaS [label="?"]; 
+    app -> cloud [label="?"];
+    cloud [color=green];
+    app -> container [label="?"];
+    container [color=green]
+    app -> SaaS [label="?"];
     SaaS [color=red];
-    cloud -> container [label="?"];
-
+    SaaS -> cloud [label="?"]; 
+    container -> cloud [label="?"];
 }
 ```
 
 ::: {.notes}
 - runs on laptop? no, multiple people need access + runs over night
 - software as a service (SaaS), e.g. Next (with data processing agreement)
-
 :::
 
 # The Carpentries
+
+What is [the Carpentries](https://carpentries.org/about-us/)?
+
+**Foundational coding and data science skills for research**
+
+- open, community-built lessons
+    - learn-by-doing 
+    - live-coding
+- train the trainer
+- network, community
+
+# What can you learn in 4 days?
+
+![](images/carpentries_pre_post.png){height="450" fig-align="center"}
+
+::: {.notes}
+- tendency for improving self-sufficiency skills
+:::
+
+---
+
+Other feedback:
+
+- comfortable learning environment
+- less so: immediate applicability
+
+
+# Digital literacy
+
+![https://www.theverge.com/22684730/students-file-folder-directory-structure-education-gen-z](images/file-not-found.png){height="450" fig-align="center"}
+
+::: {.notes}
+
+:::
+
+---
+
+*As the student begins assembling their resources for the assignment, they may not be able to conveniently locate the relevant information if it is spread across web-based organizational tools, a variety of personal computer locations and devices, and bookmarked web pages*
+
+::: aside
+Cole, C., Mross, E., & Pritt, A. (2024). The Myth of the ’Born Digital’: Addressing Student Computer and Digital Literacy. Journal of New Librarianship, 9(2), 1–13. https://doi.org/10.33011/newlibs/17/1
+:::
+
+---
+
+Where is my software running?
+
+**Understanding (infrastructure) software as components**
+
+- self-suffciency
+- awareness re maintenance
+- privacy and security
+
+# Lessons learned
+
+- Importance of software management (training)
+- Impact of live coding (learn-by-doing approach)
+
+::: {.notes}
+- software management in the broadest sense, e.g. file directories
+- live coding in consulting can also mean setting up a cloud workspace
 
 # Challenges
 
