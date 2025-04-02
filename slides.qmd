@@ -31,7 +31,7 @@ Benoit.dessucy, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, v
 - Research support/infrastructure roles
 - Research software and infrastructure
 - Training: the Carpentries
-- Lessons / Challenges / Discussion
+- Discussion
 
 # Research Infrastructure Roles
 
@@ -41,9 +41,10 @@ Benoit.dessucy, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, v
 
 [LCRDM report](https://zenodo.org/records/15052095):
 
-The role of RSEs varies across Dutch institutions and projects. Some are deeply embedded in research teams, **developing new software and advising researchers** ... Others focus on **support and training, guiding researchers on software best practices**, including version control, testing, documentation, and FAIR principles.
+The role of RSEs varies across Dutch institutions and projects. 
+Some are deeply embedded in research teams, **developing new software and advising researchers**
 
-*This variety in roles reflects the diverse ways institutions have implemented RSE positions, tailored to their local research needs.*
+... Others focus on **support and training, guiding researchers on software best practices**, including version control, testing, documentation, and FAIR principles.
 
 ::: {.notes}
 This role (and research support roles in general) are hard to capture with a single title
@@ -61,8 +62,7 @@ Data wrangler, Research application manager, Data steward
 
 ::: {.notes}
 
-- Data retrieval (scraping, databases), wrangling, analysis
-- Data pipelines and infrastructure (+ privacy and security)
+- Data science and engineering, but with a broader view on data management, privacy and security)
 
 https://the-turing-way.netlify.app/collaboration/research-infrastructure-roles/data-wrangler
 :::
@@ -72,6 +72,8 @@ https://the-turing-way.netlify.app/collaboration/research-infrastructure-roles/d
 ![](images/research-application-managers.jpg){height="450" fig-align="center"}
 
 ::: {.notes}
+- promote and extend existing software, community
+
 https://the-turing-way.netlify.app/collaboration/research-infrastructure-roles/ram
 :::
 
@@ -83,9 +85,15 @@ Constraints
 - Ongoing projects require a number of specific skills
 - Needs might change, projects and people come and go
 
-# Research engineer @ FMG
+# Research engineer at FMG
 
 RSE, data wrangler & research application manager?
+
+*This variety in roles reflects the diverse ways institutions have implemented RSE positions, tailored to their local research needs*
+(LCRDM report)
+
+::: {.notes}
+:::
 
 ---
 
@@ -95,66 +103,120 @@ RSE, data wrangler & research application manager?
 
 **That's the role of research engineers**
 
-# Research Engineering Service @ FMG
+::: {.notes}
+- sometimes (SURF) products align with those needs, sometimes not; then we need to solve it
+- bridge between IT services and researchers
+:::
 
-- Consultancy: < 1 hour
+# Research engineer at FMG
+
+- 1-1 meetings
 - Short-term projects: days/weeks
 - Long-term projects: infrastructure development
 
 ---
 
-*We act as a **knowledge hub** where expertise gained in temporary projects are safeguarded and used for cross-pollination across domains.*
+## Workflow {visibility="hidden"}
 
-[UU research engineers](https://www.uu.nl/en/research/research-data-management/support/research-engineers)
+- Find existing software (active, open-source)
+- Connect with developers/community
+- Proof of concepts
+- Extend existing software
+- Build custom software
 
 ---
 
-Our **knowledge hub**: recent examples
+*We act as a **knowledge hub** where expertise gained in temporary projects are safeguarded and used for cross-pollination across domains.*
 
-- internal database, research cloud, android app
-- proof of concepts
+[Research engineers at Utrecht University](https://www.uu.nl/en/research/research-data-management/support/research-engineers)
 
 ::: {.notes}
-- database: duckdb; for small projects with tight budgets
-    - ended up not using it for this project, but it is now part of our "knowledge hub"
-- research cloud: cost-efficient way to deploy web applications, collaborate
-- android app for controlling movement sensors
-- PoC: be ready for when there's a need; modular: small independent components that can be stacked together if needed
+- recent examples: 
+    - research cloud: cost-efficient way to deploy web applications, collaborate
+    - android app for controlling movement sensors
+- proof of concepts: be ready for when there's a need; modular: small independent components that can be stacked together if needed
 :::
 
-# Decision tree {visibility="hidden"}
+---
 
-- Find existing software/solution; promote
-- Preferrably open-source and active
-- Find the developers/maintainers; connect
-- Proof of concept for current case
-- Extend/Improve existing software
-- Build custom script/software
+```{dot}
+digraph G {
+    dd[label="data donation"];
+    ws[label=""];
+    st[label=""];
+    dp[label=""];
+    ho[label=""];
+    cp[label=""];
+    db[label=""];
+    dm[label=""];
+    ds[label=""]
+    
+    dd -> ws -> st;
+    dd -> dp -> db -> dm;
+    dp -> cp;
+    dd -> ho;
+    ws -> ho;
+    db -> ho;
+    ds -> ho;
+    st -> ho;
+    dm -> ds;
+
+}
+}
+```
+
+---
+
+```{dot}
+digraph G {
+    dd[label="data donation"];
+    ws[label="web scraping"];
+    st[label="storage"];
+    dp[label="data processing"];
+    ho[label="infrastructure/cloud"];
+    cp[label="compute/AI"];
+    db[label="databases"];
+    dm[label="data models"];
+    ds[label="dashboards"]
+    
+    dd -> ws -> st;
+    dd -> dp -> db -> dm;
+    dp -> cp;
+    dd -> ho;
+    ws -> ho;
+    db -> ho;
+    ds -> ho;
+    st -> ho;
+    dm -> ds;
+
+}
+```
 
 ::: {.notes}
-What's the point of having one complex piece of software if the project ends. 
+- This is not one project, but a knowledge hub made from many projects
 :::
 
 # What is research software?
 
-From the LCRDM report:
-
 *it \[research software] **contains the research process**: data is collected, read, preprocessed, analyzed, visualized and simulated using research software*
+(LCRDM report)
 
+<!--
 ---
 
 <iframe class="stretch" data-src="https://jupyter.org/try-jupyter/lab/"></iframe>
 
 ---
+-->
 
 ## Software is a form of data
 
 - can be stored, loaded, processed
 - used as input or output (of other software)
-- but: it is a complex type of data
-    - context
-    - dependencies
-    - maintenance
+- complex type of data
+    - needs (more) context
+    - has dependencies
+    - requires maintenance
 
 ::: aside
 Adapted from Netherlands eScience Center, CC-BY 4.0
@@ -166,21 +228,13 @@ Adapted from Netherlands eScience Center, CC-BY 4.0
 - requires [maintenance](https://esciencecenter-digital-skills.github.io/research-software-support/modules/researchsoftware/slides-software#/4/4), is dynamic
 :::
 
-# Software as components of instruments
+# Infrastructure software
 
-[Blog](https://blog.esciencecenter.nl/defining-the-roles-of-research-software-21535a43f23)
+- Programming languages and compilers
+- (Generic) software libraries
+- Code repositories, data repositories
 
-- instruments: MRI-scanner, data donation (virtual)
-- software components: UI, server, database, ...
-
-*Or more generally, research software components organize, serve, and provide access to data*
-
-# Infrastructure software vs. software infrastructure
-
-- compilers and programming languages
-- generic software libraries
-- code repositories, data repositories
-- and open source software in general
+[The Future of Research Software Workshop](https://blog.esciencecenter.nl/defining-the-roles-of-research-software-21535a43f23)
 
 ---
 
@@ -195,9 +249,16 @@ Adapted from Netherlands eScience Center, CC-BY 4.0
 
 ---
 
+![](images/dependency_disappeared.png){height="450" fig-align="center"}
+
+---
+
+JupyterLab
+
 ```{dot}
 digraph G {
-    notebook -> javascript;
+    nb [label="notebook", style=filled]
+    nb -> javascript;
     pandas -> numpy
     numpy -> python;
     ipk [label="ipython-kernel"];
@@ -212,39 +273,68 @@ digraph G {
 
 ---
 
-The "?" can be
-
-- a laptop
-- a cloud service
-- a container (software infrastructure software?)
-- a container on the cloud
-
----
-
-::: {.notes}
-- what is a container? think of it as a computer running on another computer with specific software pre-installed
-:::
-
-Example: app vs. script
+## {visibility="hidden"}
 
 ```{dot}
 digraph G {
-    app -> laptop [label="?"];
+    app [label="?"];
     laptop [color=red]; 
-    app -> cloud [label="?"];
+    app -> laptop;
+    app -> cloud;
     cloud [color=green];
-    app -> container [label="?"];
+    app -> container;
     container [color=green]
-    app -> SaaS [label="?"];
+    app -> SaaS;
     SaaS [color=red];
-    SaaS -> cloud [label="?"]; 
-    container -> cloud [label="?"];
+    SaaS -> cloud; 
+    container -> cloud;
 }
 ```
 
 ::: {.notes}
-- runs on laptop? no, multiple people need access + runs over night
-- software as a service (SaaS), e.g. Next (with data processing agreement)
+- runs on laptop? no, needs to be on a safe/private server (SANE)
+:::
+
+---
+
+**Secure ANalysis Environment**: [SANE](https://www.surf.nl/en/themes/research-infrastructure/sane-secure-environment-for-analysing-sensitive-data)
+
+```{dot}
+digraph G {
+    subgraph cluster {
+        jl [label="JupyterLab"];
+        style=filled;
+        label = "";
+    }
+    researcher -> jl;
+    ds [label="data server"];
+    subgraph cluster0 {
+        ps [label="provider portal"];
+        style=filled;
+        color=lightgrey;
+    }
+    "data provider" -> ps;
+    jl -> ds;
+    ps -> ds;
+    ps -> internet;
+    internet -> ps;
+}
+```
+
+---
+
+We need to understand:
+
+- software fundamentals
+- software management
+
+In order to:
+
+- Make informed decisions
+- Solve (small) issues
+- Acknowledge open-source
+
+::: {.notes}
 :::
 
 # The Carpentries
@@ -293,23 +383,29 @@ Cole, C., Mross, E., & Pritt, A. (2024). The Myth of the ’Born Digital’: Add
 
 ---
 
-Where is my software running?
+## "Where is my software running?"
 
 **Understanding (infrastructure) software as components**
 
-- self-suffciency
-- awareness re maintenance
-- privacy and security
+... [of instruments](https://blog.esciencecenter.nl/defining-the-roles-of-research-software-21535a43f23)
 
-# Lessons learned
+- instruments: MRI-scanner, data donation (virtual)
+- software components: UI, server, database, ...
 
-- Importance of software management (training)
-- Impact of live coding (learn-by-doing approach)
+<!--
+*Or more generally, research software components organize, serve, and provide access to data*
+-->
 
 ::: {.notes}
-- software management in the broadest sense, e.g. file directories
-- live coding in consulting can also mean setting up a cloud workspace
+- What applies to data (previous slide), also applies to software
+- Understanding components improves
+    - Solving problems self-suffciently
+    - Awareness regarding maintenance and security/privacy
+:::
 
-# Challenges
+# Challenges {visibility="hidden"}
 
 <img src="images/Labyrint_barvaux.jpg" height="200">
+
+- lack of (good) documentation
+- terminology
