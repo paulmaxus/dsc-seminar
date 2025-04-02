@@ -146,7 +146,7 @@ Max Paulus
 <li>Research support/infrastructure roles</li>
 <li>Research software and infrastructure</li>
 <li>Training: the Carpentries</li>
-<li>Lessons / Challenges / Discussion</li>
+<li>Discussion</li>
 </ul>
 </section>
 
@@ -163,8 +163,8 @@ Max Paulus
 <section id="research-software-engineer" class="title-slide slide level1 center">
 <h1>Research software engineer</h1>
 <p><a href="https://zenodo.org/records/15052095">LCRDM report</a>:</p>
-<p>The role of RSEs varies across Dutch institutions and projects. Some are deeply embedded in research teams, <strong>developing new software and advising researchers</strong> … Others focus on <strong>support and training, guiding researchers on software best practices</strong>, including version control, testing, documentation, and FAIR principles.</p>
-<p><em>This variety in roles reflects the diverse ways institutions have implemented RSE positions, tailored to their local research needs.</em></p>
+<p>The role of RSEs varies across Dutch institutions and projects. Some are deeply embedded in research teams, <strong>developing new software and advising researchers</strong></p>
+<p>… Others focus on <strong>support and training, guiding researchers on software best practices</strong>, including version control, testing, documentation, and FAIR principles.</p>
 <aside class="notes">
 <p>This role (and research support roles in general) are hard to capture with a single title</p>
 <p>https://the-turing-way.netlify.app/collaboration/research-infrastructure-roles/rse</p>
@@ -195,8 +195,7 @@ Max Paulus
 </div>
 <aside class="notes">
 <ul>
-<li>Data retrieval (scraping, databases), wrangling, analysis</li>
-<li>Data pipelines and infrastructure (+ privacy and security)</li>
+<li>Data science and engineering, but with a broader view on data management, privacy and security)</li>
 </ul>
 <p>https://the-turing-way.netlify.app/collaboration/research-infrastructure-roles/data-wrangler</p>
 <style type="text/css">
@@ -219,6 +218,9 @@ Max Paulus
 </figure>
 </div>
 <aside class="notes">
+<ul>
+<li>promote and extend existing software, community</li>
+</ul>
 <p>https://the-turing-way.netlify.app/collaboration/research-infrastructure-roles/ram</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -235,9 +237,23 @@ Max Paulus
 
 
 <section>
-<section id="research-engineer-fmg" class="title-slide slide level1 center">
-<h1>Research engineer @ FMG</h1>
+<section id="research-engineer-at-fmg" class="title-slide slide level1 center">
+<h1>Research engineer at FMG</h1>
 <p>RSE, data wrangler &amp; research application manager?</p>
+<p><em>This variety in roles reflects the diverse ways institutions have implemented RSE positions, tailored to their local research needs</em> (LCRDM report)</p>
+<aside class="notes">
+
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section class="slide level2">
 
@@ -246,37 +262,10 @@ Max Paulus
 <p>We build tools that fit in the workflow of researchers. Our biggest challenge is finding out what researchers actually need and how they can use our tools in their work.</p>
 </blockquote>
 <p><strong>That’s the role of research engineers</strong></p>
-</section></section>
-<section>
-<section id="research-engineering-service-fmg" class="title-slide slide level1 center">
-<h1>Research Engineering Service @ FMG</h1>
-<ul>
-<li>Consultancy: &lt; 1 hour</li>
-<li>Short-term projects: days/weeks</li>
-<li>Long-term projects: infrastructure development</li>
-</ul>
-</section>
-<section class="slide level2">
-
-<p><em>We act as a <strong>knowledge hub</strong> where expertise gained in temporary projects are safeguarded and used for cross-pollination across domains.</em></p>
-<p><a href="https://www.uu.nl/en/research/research-data-management/support/research-engineers">UU research engineers</a></p>
-</section>
-<section class="slide level2">
-
-<p>Our <strong>knowledge hub</strong>: recent examples</p>
-<ul>
-<li>internal database, research cloud, android app</li>
-<li>proof of concepts</li>
-</ul>
 <aside class="notes">
 <ul>
-<li>database: duckdb; for small projects with tight budgets
-<ul>
-<li>ended up not using it for this project, but it is now part of our “knowledge hub”</li>
-</ul></li>
-<li>research cloud: cost-efficient way to deploy web applications, collaborate</li>
-<li>android app for controlling movement sensors</li>
-<li>PoC: be ready for when there’s a need; modular: small independent components that can be stacked together if needed</li>
+<li>sometimes (SURF) products align with those needs, sometimes not; then we need to solve it</li>
+<li>bridge between IT services and researchers</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -290,29 +279,362 @@ Max Paulus
           display:block!important;
       }</style></aside>
 </section></section>
-
-
 <section>
-<section id="what-is-research-software" class="title-slide slide level1 center">
-<h1>What is research software?</h1>
-<p>From the LCRDM report:</p>
-<p><em>it [research software] <strong>contains the research process</strong>: data is collected, read, preprocessed, analyzed, visualized and simulated using research software</em></p>
+<section id="research-engineer-at-fmg-1" class="title-slide slide level1 center">
+<h1>Research engineer at FMG</h1>
+<ul>
+<li>1-1 meetings</li>
+<li>Short-term projects: days/weeks</li>
+<li>Long-term projects: infrastructure development</li>
+</ul>
+</section>
+
+<section class="slide level2">
+
+<p><em>We act as a <strong>knowledge hub</strong> where expertise gained in temporary projects are safeguarded and used for cross-pollination across domains.</em></p>
+<p><a href="https://www.uu.nl/en/research/research-data-management/support/research-engineers">Research engineers at Utrecht University</a></p>
+<aside class="notes">
+<ul>
+<li>recent examples:
+<ul>
+<li>research cloud: cost-efficient way to deploy web applications, collaborate</li>
+<li>android app for controlling movement sensors</li>
+</ul></li>
+<li>proof of concepts: be ready for when there’s a need; modular: small independent components that can be stacked together if needed</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section class="slide level2">
 
-<iframe class="stretch" data-src="https://jupyter.org/try-jupyter/lab/">
-</iframe>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<svg width="960" height="480" viewbox="0.00 0.00 239.18 404.00" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none; display: block; margin: auto auto auto auto">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 400)">
+<title>G</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-400 235.18,-400 235.18,4 -4,4"></polygon>
+<!-- dd -->
+<g id="node1" class="node">
+<title>dd</title>
+<ellipse fill="none" stroke="black" cx="139" cy="-378" rx="63.16" ry="18"></ellipse>
+<text text-anchor="middle" x="139" y="-373.8" font-family="Times,serif" font-size="14.00">data donation</text>
+</g>
+<!-- ws -->
+<g id="node2" class="node">
+<title>ws</title>
+<ellipse fill="none" stroke="black" cx="48" cy="-162" rx="27" ry="18"></ellipse>
+</g>
+<!-- dd&#45;&gt;ws -->
+<g id="edge1" class="edge">
+<title>dd-&gt;ws</title>
+<path fill="none" stroke="black" d="M126.74,-360.19C119.48,-349.95 110.31,-336.48 103,-324 84.91,-293.13 78.83,-285.76 67,-252 59.92,-231.78 55,-208 51.95,-190.12"></path>
+<polygon fill="black" stroke="black" points="55.38,-189.39 50.33,-180.08 48.47,-190.51 55.38,-189.39"></polygon>
+</g>
+<!-- dp -->
+<g id="node4" class="node">
+<title>dp</title>
+<ellipse fill="none" stroke="black" cx="139" cy="-306" rx="27" ry="18"></ellipse>
+</g>
+<!-- dd&#45;&gt;dp -->
+<g id="edge3" class="edge">
+<title>dd-&gt;dp</title>
+<path fill="none" stroke="black" d="M139,-359.7C139,-351.98 139,-342.71 139,-334.11"></path>
+<polygon fill="black" stroke="black" points="142.5,-334.1 139,-324.1 135.5,-334.1 142.5,-334.1"></polygon>
+</g>
+<!-- ho -->
+<g id="node5" class="node">
+<title>ho</title>
+<ellipse fill="none" stroke="black" cx="120" cy="-18" rx="27" ry="18"></ellipse>
+</g>
+<!-- dd&#45;&gt;ho -->
+<g id="edge7" class="edge">
+<title>dd-&gt;ho</title>
+<path fill="none" stroke="black" d="M158.3,-360.82C185.01,-336.5 230,-287.71 230,-235 230,-235 230,-235 230,-161 230,-120.55 234.73,-104.76 211,-72 196.81,-52.4 172.97,-38.9 153.25,-30.44"></path>
+<polygon fill="black" stroke="black" points="154.54,-27.18 143.96,-26.68 151.92,-33.67 154.54,-27.18"></polygon>
+</g>
+<!-- st -->
+<g id="node3" class="node">
+<title>st</title>
+<ellipse fill="none" stroke="black" cx="27" cy="-90" rx="27" ry="18"></ellipse>
+</g>
+<!-- ws&#45;&gt;st -->
+<g id="edge2" class="edge">
+<title>ws-&gt;st</title>
+<path fill="none" stroke="black" d="M42.92,-144.05C40.52,-136.06 37.6,-126.33 34.92,-117.4"></path>
+<polygon fill="black" stroke="black" points="38.26,-116.36 32.04,-107.79 31.56,-118.37 38.26,-116.36"></polygon>
+</g>
+<!-- ws&#45;&gt;ho -->
+<g id="edge8" class="edge">
+<title>ws-&gt;ho</title>
+<path fill="none" stroke="black" d="M56.26,-144.71C68.67,-120.23 92.24,-73.74 106.98,-44.67"></path>
+<polygon fill="black" stroke="black" points="110.21,-46.04 111.62,-35.54 103.97,-42.87 110.21,-46.04"></polygon>
+</g>
+<!-- st&#45;&gt;ho -->
+<g id="edge11" class="edge">
+<title>st-&gt;ho</title>
+<path fill="none" stroke="black" d="M44.49,-75.83C58.52,-65.27 78.42,-50.3 94.26,-38.37"></path>
+<polygon fill="black" stroke="black" points="96.7,-40.92 102.59,-32.11 92.49,-35.32 96.7,-40.92"></polygon>
+</g>
+<!-- cp -->
+<g id="node6" class="node">
+<title>cp</title>
+<ellipse fill="none" stroke="black" cx="103" cy="-234" rx="27" ry="18"></ellipse>
+</g>
+<!-- dp&#45;&gt;cp -->
+<g id="edge6" class="edge">
+<title>dp-&gt;cp</title>
+<path fill="none" stroke="black" d="M130.65,-288.76C126.29,-280.28 120.85,-269.71 115.96,-260.2"></path>
+<polygon fill="black" stroke="black" points="118.99,-258.44 111.3,-251.15 112.77,-261.64 118.99,-258.44"></polygon>
+</g>
+<!-- db -->
+<g id="node7" class="node">
+<title>db</title>
+<ellipse fill="none" stroke="black" cx="175" cy="-234" rx="27" ry="18"></ellipse>
+</g>
+<!-- dp&#45;&gt;db -->
+<g id="edge4" class="edge">
+<title>dp-&gt;db</title>
+<path fill="none" stroke="black" d="M147.35,-288.76C151.71,-280.28 157.15,-269.71 162.04,-260.2"></path>
+<polygon fill="black" stroke="black" points="165.23,-261.64 166.7,-251.15 159.01,-258.44 165.23,-261.64"></polygon>
+</g>
+<!-- db&#45;&gt;ho -->
+<g id="edge9" class="edge">
+<title>db-&gt;ho</title>
+<path fill="none" stroke="black" d="M161.81,-217.88C153.83,-207.83 144.21,-193.97 139,-180 122.3,-135.22 119.39,-79.01 119.33,-46.24"></path>
+<polygon fill="black" stroke="black" points="122.83,-46.09 119.4,-36.07 115.83,-46.04 122.83,-46.09"></polygon>
+</g>
+<!-- dm -->
+<g id="node8" class="node">
+<title>dm</title>
+<ellipse fill="none" stroke="black" cx="175" cy="-162" rx="27" ry="18"></ellipse>
+</g>
+<!-- db&#45;&gt;dm -->
+<g id="edge5" class="edge">
+<title>db-&gt;dm</title>
+<path fill="none" stroke="black" d="M175,-215.7C175,-207.98 175,-198.71 175,-190.11"></path>
+<polygon fill="black" stroke="black" points="178.5,-190.1 175,-180.1 171.5,-190.1 178.5,-190.1"></polygon>
+</g>
+<!-- ds -->
+<g id="node9" class="node">
+<title>ds</title>
+<ellipse fill="none" stroke="black" cx="175" cy="-90" rx="27" ry="18"></ellipse>
+</g>
+<!-- dm&#45;&gt;ds -->
+<g id="edge12" class="edge">
+<title>dm-&gt;ds</title>
+<path fill="none" stroke="black" d="M175,-143.7C175,-135.98 175,-126.71 175,-118.11"></path>
+<polygon fill="black" stroke="black" points="178.5,-118.1 175,-108.1 171.5,-118.1 178.5,-118.1"></polygon>
+</g>
+<!-- ds&#45;&gt;ho -->
+<g id="edge10" class="edge">
+<title>ds-&gt;ho</title>
+<path fill="none" stroke="black" d="M163.07,-73.81C155.79,-64.55 146.34,-52.52 138.15,-42.09"></path>
+<polygon fill="black" stroke="black" points="140.84,-39.86 131.91,-34.16 135.34,-44.18 140.84,-39.86"></polygon>
+</g>
+</g>
+</svg>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<svg width="960" height="480" viewbox="0.00 0.00 346.38 404.00" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none; display: block; margin: auto auto auto auto">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 400)">
+<title>G</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-400 342.38,-400 342.38,4 -4,4"></polygon>
+<!-- dd -->
+<g id="node1" class="node">
+<title>dd</title>
+<ellipse fill="none" stroke="black" cx="191.25" cy="-378" rx="63.16" ry="18"></ellipse>
+<text text-anchor="middle" x="191.25" y="-373.8" font-family="Times,serif" font-size="14.00">data donation</text>
+</g>
+<!-- ws -->
+<g id="node2" class="node">
+<title>ws</title>
+<ellipse fill="none" stroke="black" cx="62.25" cy="-162" rx="62.01" ry="18"></ellipse>
+<text text-anchor="middle" x="62.25" y="-157.8" font-family="Times,serif" font-size="14.00">web scraping</text>
+</g>
+<!-- dd&#45;&gt;ws -->
+<g id="edge1" class="edge">
+<title>dd-&gt;ws</title>
+<path fill="none" stroke="black" d="M161.91,-361.85C145.66,-352.47 125.86,-339.31 111.25,-324 85.52,-297.04 79.37,-287.58 68.25,-252 61.99,-231.95 60.68,-208.17 60.83,-190.23"></path>
+<polygon fill="black" stroke="black" points="64.33,-190.24 61.07,-180.16 57.33,-190.08 64.33,-190.24"></polygon>
+</g>
+<!-- dp -->
+<g id="node4" class="node">
+<title>dp</title>
+<ellipse fill="none" stroke="black" cx="191.25" cy="-306" rx="70.67" ry="18"></ellipse>
+<text text-anchor="middle" x="191.25" y="-301.8" font-family="Times,serif" font-size="14.00">data processing</text>
+</g>
+<!-- dd&#45;&gt;dp -->
+<g id="edge3" class="edge">
+<title>dd-&gt;dp</title>
+<path fill="none" stroke="black" d="M191.25,-359.7C191.25,-351.98 191.25,-342.71 191.25,-334.11"></path>
+<polygon fill="black" stroke="black" points="194.75,-334.1 191.25,-324.1 187.75,-334.1 194.75,-334.1"></polygon>
+</g>
+<!-- ho -->
+<g id="node5" class="node">
+<title>ho</title>
+<ellipse fill="none" stroke="black" cx="167.25" cy="-18" rx="87.38" ry="18"></ellipse>
+<text text-anchor="middle" x="167.25" y="-13.8" font-family="Times,serif" font-size="14.00">infrastructure/cloud</text>
+</g>
+<!-- dd&#45;&gt;ho -->
+<g id="edge7" class="edge">
+<title>dd-&gt;ho</title>
+<path fill="none" stroke="black" d="M224.38,-362.66C267.46,-341.51 337.25,-297.58 337.25,-235 337.25,-235 337.25,-235 337.25,-161 337.25,-120.14 341.77,-102.2 314.25,-72 296.35,-52.35 270.62,-39.97 245.67,-32.19"></path>
+<polygon fill="black" stroke="black" points="246.37,-28.75 235.79,-29.32 244.42,-35.47 246.37,-28.75"></polygon>
+</g>
+<!-- st -->
+<g id="node3" class="node">
+<title>st</title>
+<ellipse fill="none" stroke="black" cx="62.25" cy="-90" rx="38.85" ry="18"></ellipse>
+<text text-anchor="middle" x="62.25" y="-85.8" font-family="Times,serif" font-size="14.00">storage</text>
+</g>
+<!-- ws&#45;&gt;st -->
+<g id="edge2" class="edge">
+<title>ws-&gt;st</title>
+<path fill="none" stroke="black" d="M62.25,-143.7C62.25,-135.98 62.25,-126.71 62.25,-118.11"></path>
+<polygon fill="black" stroke="black" points="65.75,-118.1 62.25,-108.1 58.75,-118.1 65.75,-118.1"></polygon>
+</g>
+<!-- ws&#45;&gt;ho -->
+<g id="edge8" class="edge">
+<title>ws-&gt;ho</title>
+<path fill="none" stroke="black" d="M78.57,-144.44C88.23,-134.29 100.45,-120.82 110.25,-108 125.82,-87.64 141.36,-63.01 152.28,-44.82"></path>
+<polygon fill="black" stroke="black" points="155.45,-46.35 157.54,-35.96 149.43,-42.77 155.45,-46.35"></polygon>
+</g>
+<!-- st&#45;&gt;ho -->
+<g id="edge11" class="edge">
+<title>st-&gt;ho</title>
+<path fill="none" stroke="black" d="M83.5,-74.83C98.1,-65.1 117.76,-52 134.36,-40.93"></path>
+<polygon fill="black" stroke="black" points="136.34,-43.81 142.72,-35.35 132.46,-37.99 136.34,-43.81"></polygon>
+</g>
+<!-- cp -->
+<g id="node6" class="node">
+<title>cp</title>
+<ellipse fill="none" stroke="black" cx="134.25" cy="-234" rx="57.32" ry="18"></ellipse>
+<text text-anchor="middle" x="134.25" y="-229.8" font-family="Times,serif" font-size="14.00">compute/AI</text>
+</g>
+<!-- dp&#45;&gt;cp -->
+<g id="edge6" class="edge">
+<title>dp-&gt;cp</title>
+<path fill="none" stroke="black" d="M177.46,-288.05C170.52,-279.54 162,-269.07 154.35,-259.68"></path>
+<polygon fill="black" stroke="black" points="156.95,-257.33 147.93,-251.79 151.53,-261.75 156.95,-257.33"></polygon>
+</g>
+<!-- db -->
+<g id="node7" class="node">
+<title>db</title>
+<ellipse fill="none" stroke="black" cx="257.25" cy="-234" rx="48.08" ry="18"></ellipse>
+<text text-anchor="middle" x="257.25" y="-229.8" font-family="Times,serif" font-size="14.00">databases</text>
+</g>
+<!-- dp&#45;&gt;db -->
+<g id="edge4" class="edge">
+<title>dp-&gt;db</title>
+<path fill="none" stroke="black" d="M206.9,-288.41C215.2,-279.61 225.55,-268.63 234.7,-258.92"></path>
+<polygon fill="black" stroke="black" points="237.41,-261.15 241.73,-251.47 232.32,-256.34 237.41,-261.15"></polygon>
+</g>
+<!-- db&#45;&gt;ho -->
+<g id="edge9" class="edge">
+<title>db-&gt;ho</title>
+<path fill="none" stroke="black" d="M229.14,-219.29C213.85,-210.3 196.1,-197.05 186.25,-180 162.13,-138.21 161.8,-80.18 164.21,-46.41"></path>
+<polygon fill="black" stroke="black" points="167.7,-46.61 165.06,-36.35 160.73,-46.02 167.7,-46.61"></polygon>
+</g>
+<!-- dm -->
+<g id="node8" class="node">
+<title>dm</title>
+<ellipse fill="none" stroke="black" cx="252.25" cy="-162" rx="57.36" ry="18"></ellipse>
+<text text-anchor="middle" x="252.25" y="-157.8" font-family="Times,serif" font-size="14.00">data models</text>
+</g>
+<!-- db&#45;&gt;dm -->
+<g id="edge5" class="edge">
+<title>db-&gt;dm</title>
+<path fill="none" stroke="black" d="M256.02,-215.7C255.47,-207.98 254.81,-198.71 254.19,-190.11"></path>
+<polygon fill="black" stroke="black" points="257.68,-189.83 253.48,-180.1 250.7,-190.33 257.68,-189.83"></polygon>
+</g>
+<!-- ds -->
+<g id="node9" class="node">
+<title>ds</title>
+<ellipse fill="none" stroke="black" cx="251.25" cy="-90" rx="54.47" ry="18"></ellipse>
+<text text-anchor="middle" x="251.25" y="-85.8" font-family="Times,serif" font-size="14.00">dashboards</text>
+</g>
+<!-- dm&#45;&gt;ds -->
+<g id="edge12" class="edge">
+<title>dm-&gt;ds</title>
+<path fill="none" stroke="black" d="M252.01,-143.7C251.9,-135.98 251.76,-126.71 251.64,-118.11"></path>
+<polygon fill="black" stroke="black" points="255.14,-118.05 251.5,-108.1 248.14,-118.15 255.14,-118.05"></polygon>
+</g>
+<!-- ds&#45;&gt;ho -->
+<g id="edge10" class="edge">
+<title>ds-&gt;ho</title>
+<path fill="none" stroke="black" d="M232.19,-73.12C221.15,-63.92 207.07,-52.18 194.83,-41.98"></path>
+<polygon fill="black" stroke="black" points="197.04,-39.26 187.12,-35.55 192.56,-44.64 197.04,-39.26"></polygon>
+</g>
+</g>
+</svg>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<aside class="notes">
+<ul>
+<li>This is not one project, but a knowledge hub made from many projects</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="what-is-research-software" class="title-slide slide level1 center">
+<h1>What is research software?</h1>
+<p><em>it [research software] <strong>contains the research process</strong>: data is collected, read, preprocessed, analyzed, visualized and simulated using research software</em> (LCRDM report)</p>
+<!--
+
+---
+
+<iframe class="stretch" data-src="https://jupyter.org/try-jupyter/lab/"></iframe>
+
+---
+
+-->
 </section>
 <section id="software-is-a-form-of-data" class="slide level2">
 <h2>Software is a form of data</h2>
 <ul>
 <li>can be stored, loaded, processed</li>
 <li>used as input or output (of other software)</li>
-<li>but: it is a complex type of data
+<li>complex type of data
 <ul>
-<li>context</li>
-<li>dependencies</li>
-<li>maintenance</li>
+<li>needs (more) context</li>
+<li>has dependencies</li>
+<li>requires maintenance</li>
 </ul></li>
 </ul>
 
@@ -336,25 +658,15 @@ Max Paulus
 <aside><div>
 <p>Adapted from Netherlands eScience Center, CC-BY 4.0</p>
 </div></aside></section></section>
-<section id="software-as-components-of-instruments" class="title-slide slide level1 center">
-<h1>Software as components of instruments</h1>
-<p><a href="https://blog.esciencecenter.nl/defining-the-roles-of-research-software-21535a43f23">Blog</a></p>
-<ul>
-<li>instruments: MRI-scanner, data donation (virtual)</li>
-<li>software components: UI, server, database, …</li>
-</ul>
-<p><em>Or more generally, research software components organize, serve, and provide access to data</em></p>
-</section>
-
 <section>
-<section id="infrastructure-software-vs.-software-infrastructure" class="title-slide slide level1 center">
-<h1>Infrastructure software vs.&nbsp;software infrastructure</h1>
+<section id="infrastructure-software" class="title-slide slide level1 center">
+<h1>Infrastructure software</h1>
 <ul>
-<li>compilers and programming languages</li>
-<li>generic software libraries</li>
-<li>code repositories, data repositories</li>
-<li>and open source software in general</li>
+<li>Programming languages and compilers</li>
+<li>(Generic) software libraries</li>
+<li>Code repositories, data repositories</li>
 </ul>
+<p><a href="https://blog.esciencecenter.nl/defining-the-roles-of-research-software-21535a43f23">The Future of Research Software Workshop</a></p>
 </section>
 <section class="slide level2">
 
@@ -372,6 +684,15 @@ Max Paulus
 </div></aside></section>
 <section class="slide level2">
 
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/dependency_disappeared.png" class="quarto-figure quarto-figure-center" height="450"></p>
+</figure>
+</div>
+</section>
+<section class="slide level2">
+
+<p>JupyterLab</p>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
@@ -381,10 +702,10 @@ Max Paulus
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 328)">
 <title>G</title>
 <polygon fill="white" stroke="transparent" points="-4,4 -4,-328 447.11,-328 447.11,4 -4,4"></polygon>
-<!-- notebook -->
+<!-- nb -->
 <g id="node1" class="node">
-<title>notebook</title>
-<ellipse fill="none" stroke="black" cx="48.58" cy="-306" rx="46.95" ry="18"></ellipse>
+<title>nb</title>
+<ellipse fill="lightgrey" stroke="black" cx="48.58" cy="-306" rx="46.95" ry="18"></ellipse>
 <text text-anchor="middle" x="48.58" y="-301.8" font-family="Times,serif" font-size="14.00">notebook</text>
 </g>
 <!-- javascript -->
@@ -393,9 +714,9 @@ Max Paulus
 <ellipse fill="none" stroke="black" cx="48.58" cy="-234" rx="48.65" ry="18"></ellipse>
 <text text-anchor="middle" x="48.58" y="-229.8" font-family="Times,serif" font-size="14.00">javascript</text>
 </g>
-<!-- notebook&#45;&gt;javascript -->
+<!-- nb&#45;&gt;javascript -->
 <g id="edge1" class="edge">
-<title>notebook-&gt;javascript</title>
+<title>nb-&gt;javascript</title>
 <path fill="none" stroke="black" d="M48.58,-287.7C48.58,-279.98 48.58,-270.71 48.58,-262.11"></path>
 <polygon fill="black" stroke="black" points="52.08,-262.1 48.58,-252.1 45.08,-262.1 52.08,-262.1"></polygon>
 </g>
@@ -485,114 +806,98 @@ Max Paulus
 </div>
 </div>
 </section>
+
 <section class="slide level2">
 
-<p>The “?” can be</p>
-<ul>
-<li>a laptop</li>
-<li>a cloud service</li>
-<li>a container (software infrastructure software?)</li>
-<li>a container on the cloud</li>
-</ul>
-</section>
-<section class="slide level2">
-
-<aside class="notes">
-<ul>
-<li>what is a container? think of it as a computer running on another computer with specific software pre-installed</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<p>Example: app vs.&nbsp;script</p>
+<p><strong>Secure ANalysis Environment</strong>: <a href="https://www.surf.nl/en/themes/research-infrastructure/sane-secure-environment-for-analysing-sensitive-data">SANE</a></p>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
 <p></p><figure class=""><p></p>
 <div>
-<svg width="960" height="480" viewbox="0.00 0.00 310.52 221.60" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none; display: block; margin: auto auto auto auto">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 217.6)">
+<svg width="960" height="480" viewbox="0.00 0.00 310.00 188.00" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none; display: block; margin: auto auto auto auto">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
 <title>G</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-217.6 306.52,-217.6 306.52,4 -4,4"></polygon>
-<!-- app -->
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-184 306,-184 306,4 -4,4"></polygon>
+<g id="clust1" class="cluster">
+<title>cluster</title>
+<polygon fill="lightgrey" stroke="black" points="8,-64 8,-116 132,-116 132,-64 8,-64"></polygon>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster0</title>
+<polygon fill="lightgrey" stroke="lightgrey" points="140,-64 140,-116 294,-116 294,-64 140,-64"></polygon>
+</g>
+<!-- jl -->
 <g id="node1" class="node">
-<title>app</title>
-<ellipse fill="none" stroke="black" cx="132.17" cy="-195.6" rx="27" ry="18"></ellipse>
-<text text-anchor="middle" x="132.17" y="-191.4" font-family="Times,serif" font-size="14.00">app</text>
+<title>jl</title>
+<ellipse fill="none" stroke="black" cx="70" cy="-90" rx="54.46" ry="18"></ellipse>
+<text text-anchor="middle" x="70" y="-85.8" font-family="Times,serif" font-size="14.00">JupyterLab</text>
 </g>
-<!-- laptop -->
-<g id="node2" class="node">
-<title>laptop</title>
-<ellipse fill="none" stroke="red" cx="35.17" cy="-106.8" rx="35.35" ry="18"></ellipse>
-<text text-anchor="middle" x="35.17" y="-102.6" font-family="Times,serif" font-size="14.00">laptop</text>
-</g>
-<!-- app&#45;&gt;laptop -->
-<g id="edge1" class="edge">
-<title>app-&gt;laptop</title>
-<path fill="none" stroke="black" d="M114.14,-181.89C105.39,-175.5 94.88,-167.45 85.96,-159.6 75.77,-150.63 65.15,-140.03 56.28,-130.76"></path>
-<polygon fill="black" stroke="black" points="58.69,-128.22 49.28,-123.35 53.6,-133.02 58.69,-128.22"></polygon>
-<text text-anchor="middle" x="89.28" y="-147" font-family="Times,serif" font-size="14.00">?</text>
-</g>
-<!-- cloud -->
+<!-- ds -->
 <g id="node3" class="node">
-<title>cloud</title>
-<ellipse fill="none" stroke="green" cx="177.17" cy="-18" rx="32.48" ry="18"></ellipse>
-<text text-anchor="middle" x="177.17" y="-13.8" font-family="Times,serif" font-size="14.00">cloud</text>
+<title>ds</title>
+<ellipse fill="none" stroke="black" cx="88" cy="-18" rx="53.25" ry="18"></ellipse>
+<text text-anchor="middle" x="88" y="-13.8" font-family="Times,serif" font-size="14.00">data server</text>
 </g>
-<!-- app&#45;&gt;cloud -->
-<g id="edge2" class="edge">
-<title>app-&gt;cloud</title>
-<path fill="none" stroke="black" d="M124.46,-178.3C115.53,-157.06 103.43,-119.06 114.96,-88.8 122.26,-69.65 137.48,-52.42 151.04,-39.86"></path>
-<polygon fill="black" stroke="black" points="153.59,-42.28 158.77,-33.03 148.96,-37.04 153.59,-42.28"></polygon>
-<text text-anchor="middle" x="118.28" y="-102.6" font-family="Times,serif" font-size="14.00">?</text>
-</g>
-<!-- container -->
-<g id="node4" class="node">
-<title>container</title>
-<ellipse fill="none" stroke="green" cx="177.17" cy="-106.8" rx="46.92" ry="18"></ellipse>
-<text text-anchor="middle" x="177.17" y="-102.6" font-family="Times,serif" font-size="14.00">container</text>
-</g>
-<!-- app&#45;&gt;container -->
+<!-- jl&#45;&gt;ds -->
 <g id="edge3" class="edge">
-<title>app-&gt;container</title>
-<path fill="none" stroke="black" d="M140.64,-178.27C147.15,-165.7 156.29,-148.09 163.79,-133.62"></path>
-<polygon fill="black" stroke="black" points="166.95,-135.13 168.44,-124.65 160.73,-131.91 166.95,-135.13"></polygon>
-<text text-anchor="middle" x="162.28" y="-147" font-family="Times,serif" font-size="14.00">?</text>
+<title>jl-&gt;ds</title>
+<path fill="none" stroke="black" d="M74.36,-72.05C76.36,-64.26 78.79,-54.82 81.04,-46.08"></path>
+<polygon fill="black" stroke="black" points="84.46,-46.83 83.56,-36.28 77.68,-45.09 84.46,-46.83"></polygon>
 </g>
-<!-- SaaS -->
-<g id="node5" class="node">
-<title>SaaS</title>
-<ellipse fill="none" stroke="red" cx="272.17" cy="-106.8" rx="30.2" ry="18"></ellipse>
-<text text-anchor="middle" x="272.17" y="-102.6" font-family="Times,serif" font-size="14.00">SaaS</text>
+<!-- researcher -->
+<g id="node2" class="node">
+<title>researcher</title>
+<ellipse fill="none" stroke="black" cx="70" cy="-162" rx="50.9" ry="18"></ellipse>
+<text text-anchor="middle" x="70" y="-157.8" font-family="Times,serif" font-size="14.00">researcher</text>
 </g>
-<!-- app&#45;&gt;SaaS -->
+<!-- researcher&#45;&gt;jl -->
+<g id="edge1" class="edge">
+<title>researcher-&gt;jl</title>
+<path fill="none" stroke="black" d="M70,-143.7C70,-135.98 70,-126.71 70,-118.11"></path>
+<polygon fill="black" stroke="black" points="73.5,-118.1 70,-108.1 66.5,-118.1 73.5,-118.1"></polygon>
+</g>
+<!-- ps -->
+<g id="node4" class="node">
+<title>ps</title>
+<ellipse fill="none" stroke="black" cx="217" cy="-90" rx="68.88" ry="18"></ellipse>
+<text text-anchor="middle" x="217" y="-85.8" font-family="Times,serif" font-size="14.00">provider portal</text>
+</g>
+<!-- ps&#45;&gt;ds -->
 <g id="edge4" class="edge">
-<title>app-&gt;SaaS</title>
-<path fill="none" stroke="black" d="M151.35,-182.71C175.03,-168.03 215.55,-142.9 243.08,-125.84"></path>
-<polygon fill="black" stroke="black" points="245.22,-128.63 251.87,-120.39 241.53,-122.68 245.22,-128.63"></polygon>
-<text text-anchor="middle" x="218.28" y="-147" font-family="Times,serif" font-size="14.00">?</text>
+<title>ps-&gt;ds</title>
+<path fill="none" stroke="black" d="M188.37,-73.46C169.45,-63.2 144.48,-49.65 124.18,-38.63"></path>
+<polygon fill="black" stroke="black" points="125.68,-35.47 115.22,-33.77 122.34,-41.62 125.68,-35.47"></polygon>
 </g>
-<!-- container&#45;&gt;cloud -->
-<g id="edge6" class="edge">
-<title>container-&gt;cloud</title>
-<path fill="none" stroke="black" d="M177.17,-88.65C177.17,-76.52 177.17,-60.02 177.17,-46.12"></path>
-<polygon fill="black" stroke="black" points="180.67,-46.11 177.17,-36.11 173.67,-46.11 180.67,-46.11"></polygon>
-<text text-anchor="middle" x="180.28" y="-58.2" font-family="Times,serif" font-size="14.00">?</text>
+<!-- internet -->
+<g id="node6" class="node">
+<title>internet</title>
+<ellipse fill="none" stroke="black" cx="217" cy="-18" rx="40.56" ry="18"></ellipse>
+<text text-anchor="middle" x="217" y="-13.8" font-family="Times,serif" font-size="14.00">internet</text>
 </g>
-<!-- SaaS&#45;&gt;cloud -->
+<!-- ps&#45;&gt;internet -->
 <g id="edge5" class="edge">
-<title>SaaS-&gt;cloud</title>
-<path fill="none" stroke="black" d="M256.06,-91.08C240.91,-77.23 218.05,-56.35 200.83,-40.62"></path>
-<polygon fill="black" stroke="black" points="203.11,-37.96 193.37,-33.8 198.39,-43.13 203.11,-37.96"></polygon>
-<text text-anchor="middle" x="236.28" y="-58.2" font-family="Times,serif" font-size="14.00">?</text>
+<title>ps-&gt;internet</title>
+<path fill="none" stroke="black" d="M211.12,-72.05C210.3,-64.35 210.06,-55.03 210.39,-46.36"></path>
+<polygon fill="black" stroke="black" points="213.89,-46.49 211.09,-36.28 206.91,-46.01 213.89,-46.49"></polygon>
+</g>
+<!-- data provider -->
+<g id="node5" class="node">
+<title>data provider</title>
+<ellipse fill="none" stroke="black" cx="217" cy="-162" rx="62.5" ry="18"></ellipse>
+<text text-anchor="middle" x="217" y="-157.8" font-family="Times,serif" font-size="14.00">data provider</text>
+</g>
+<!-- data provider&#45;&gt;ps -->
+<g id="edge2" class="edge">
+<title>data provider-&gt;ps</title>
+<path fill="none" stroke="black" d="M217,-143.7C217,-135.98 217,-126.71 217,-118.11"></path>
+<polygon fill="black" stroke="black" points="220.5,-118.1 217,-108.1 213.5,-118.1 220.5,-118.1"></polygon>
+</g>
+<!-- internet&#45;&gt;ps -->
+<g id="edge6" class="edge">
+<title>internet-&gt;ps</title>
+<path fill="none" stroke="black" d="M222.91,-36.28C223.71,-44.03 223.94,-53.36 223.59,-62.01"></path>
+<polygon fill="black" stroke="black" points="220.09,-61.83 222.88,-72.05 227.08,-62.33 220.09,-61.83"></polygon>
 </g>
 </g>
 </svg>
@@ -601,11 +906,22 @@ Max Paulus
 </div>
 </div>
 </div>
-<aside class="notes">
+</section>
+<section class="slide level2">
+
+<p>We need to understand:</p>
 <ul>
-<li>runs on laptop? no, multiple people need access + runs over night</li>
-<li>software as a service (SaaS), e.g.&nbsp;Next (with data processing agreement)</li>
+<li>software fundamentals</li>
+<li>software management</li>
 </ul>
+<p>In order to:</p>
+<ul>
+<li>Make informed decisions</li>
+<li>Solve (small) issues</li>
+<li>Acknowledge open-source</li>
+</ul>
+<aside class="notes">
+
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -695,35 +1011,26 @@ Max Paulus
 <aside><div>
 <p>Cole, C., Mross, E., &amp; Pritt, A. (2024). The Myth of the ’Born Digital’: Addressing Student Computer and Digital Literacy. Journal of New Librarianship, 9(2), 1–13. https://doi.org/10.33011/newlibs/17/1</p>
 </div></aside></section>
-<section class="slide level2">
-
-<p>Where is my software running?</p>
+<section id="where-is-my-software-running" class="slide level2">
+<h2>“Where is my software running?”</h2>
 <p><strong>Understanding (infrastructure) software as components</strong></p>
+<p>… <a href="https://blog.esciencecenter.nl/defining-the-roles-of-research-software-21535a43f23">of instruments</a></p>
 <ul>
-<li>self-suffciency</li>
-<li>awareness re maintenance</li>
-<li>privacy and security</li>
+<li>instruments: MRI-scanner, data donation (virtual)</li>
+<li>software components: UI, server, database, …</li>
 </ul>
-</section></section>
-<section>
-<section id="lessons-learned" class="title-slide slide level1 center">
-<h1>Lessons learned</h1>
-<ul>
-<li>Importance of software management (training)</li>
-<li>Impact of live coding (learn-by-doing approach)</li>
-</ul>
-</section>
+<!--
+*Or more generally, research software components organize, serve, and provide access to data*
+-->
 <aside class="notes">
 <ul>
-<li>software management in the broadest sense, e.g.&nbsp;file directories</li>
-<li>live coding in consulting can also mean setting up a cloud workspace</li>
+<li>What applies to data (previous slide), also applies to software</li>
+<li>Understanding components improves
+<ul>
+<li>Solving problems self-suffciently</li>
+<li>Awareness regarding maintenance and security/privacy</li>
+</ul></li>
 </ul>
-<section id="challenges" class="title-slide slide level1 center">
-<h1>Challenges</h1>
-<p><img src="images/Labyrint_barvaux.jpg" height="200"></p>
-
-</section>
-
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -734,7 +1041,9 @@ Max Paulus
           width: 1px!important;
           overflow: hidden!important;
           display:block!important;
-      }</style></aside></section>
+      }</style></aside>
+</section></section>
+
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
