@@ -6,11 +6,13 @@
 <script src="slides_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="slides_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="slides_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="slides_files/libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.6.42">
+<link href="slides_files/libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="slides_files/libs/quarto-contrib/videojs/video.min.js"></script>
+<link href="slides_files/libs/quarto-contrib/videojs/video-js.css" rel="stylesheet"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.6.43">
 
   <meta name="author" content="Max Paulus">
-  <title>Research Engineering Support</title>
+  <title>Research Engineering</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -127,7 +129,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Research Engineering Support</h1>
+  <h1 class="title">Research Engineering</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -138,8 +140,6 @@ Max Paulus
 </div>
 
 </section>
-
-
 <section id="agenda" class="title-slide slide level1 center">
 <h1>Agenda</h1>
 <ul>
@@ -150,6 +150,7 @@ Max Paulus
 </ul>
 </section>
 
+<section>
 <section id="research-infrastructure-roles" class="title-slide slide level1 center">
 <h1>Research Infrastructure Roles</h1>
 <div class="quarto-figure quarto-figure-center">
@@ -158,16 +159,8 @@ Max Paulus
 <figcaption>The Turing Way Community. This illustration is created by Scriberia with The Turing Way community, used under a CC-BY 4.0 licence. DOI: 10.5281/zenodo.3332807</figcaption>
 </figure>
 </div>
-</section>
-
-<section id="research-software-engineer" class="title-slide slide level1 center">
-<h1>Research software engineer</h1>
-<p><a href="https://zenodo.org/records/15052095">LCRDM report</a>:</p>
-<p>The role of RSEs varies across Dutch institutions and projects. Some are deeply embedded in research teams, <strong>developing new software and advising researchers</strong></p>
-<p>… Others focus on <strong>support and training, guiding researchers on software best practices</strong>, including version control, testing, documentation, and FAIR principles.</p>
 <aside class="notes">
-<p>This role (and research support roles in general) are hard to capture with a single title</p>
-<p>https://the-turing-way.netlify.app/collaboration/research-infrastructure-roles/rse</p>
+<p>Research support roles are fluid; researchers are/become supporters and vice versa</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -180,14 +173,32 @@ Max Paulus
           display:block!important;
       }</style></aside>
 </section>
+<section class="slide level2">
 
-<section>
-<section id="other-roles" class="title-slide slide level1 center">
-<h1>Other roles</h1>
-<p>Data wrangler, Research application manager, Data steward</p>
+<p><strong>Research software engineer (RSE)</strong></p>
+<p><a href="https://zenodo.org/records/15052095">LCRDM report</a>:</p>
+<blockquote>
+<p>The role of RSEs varies across Dutch institutions and projects. Some are deeply embedded in research teams, <strong>developing new software and advising researchers</strong>…</p>
+</blockquote>
+<blockquote>
+<p>Others focus on <strong>support and training, guiding researchers on software best practices</strong>, including version control, testing, documentation, and FAIR principles.</p>
+</blockquote>
+<aside class="notes">
+
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="data-wrangler" class="slide level2">
-<h2>Data wrangler</h2>
+<section class="slide level2">
+
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="images/data-wrangler.jpg" class="quarto-figure quarto-figure-center" height="450"></p>
@@ -195,7 +206,7 @@ Max Paulus
 </div>
 <aside class="notes">
 <ul>
-<li>Data science and engineering, but with a broader view on data management, privacy and security)</li>
+<li>Data science and engineering, but with a broader view on data management, privacy and security</li>
 </ul>
 <p>https://the-turing-way.netlify.app/collaboration/research-infrastructure-roles/data-wrangler</p>
 <style type="text/css">
@@ -210,8 +221,8 @@ Max Paulus
           display:block!important;
       }</style></aside>
 </section>
-<section id="ram" class="slide level2">
-<h2>RAM</h2>
+<section class="slide level2">
+
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="images/research-application-managers.jpg" class="quarto-figure quarto-figure-center" height="450"></p>
@@ -234,13 +245,14 @@ Max Paulus
           display:block!important;
       }</style></aside>
 </section></section>
-
-
 <section>
 <section id="research-engineer-at-fmg" class="title-slide slide level1 center">
 <h1>Research engineer at FMG</h1>
 <p>RSE, data wrangler &amp; research application manager?</p>
-<p><em>This variety in roles reflects the diverse ways institutions have implemented RSE positions, tailored to their local research needs</em> (LCRDM report)</p>
+<blockquote>
+<p>This variety in roles reflects the diverse ways institutions have implemented RSE positions, tailored to their local research needs</p>
+</blockquote>
+<p>(LCRDM report)</p>
 <aside class="notes">
 
 <style type="text/css">
@@ -257,14 +269,14 @@ Max Paulus
 </section>
 <section class="slide level2">
 
-<p><a href="https://blog.esciencecenter.nl/open-science-festival-what-infrastructures-do-we-need-to-preserve-research-software-7c181404f310">Matthijs Moed (SURF)</a></p>
 <blockquote>
-<p>We build tools that fit in the workflow of researchers. Our biggest challenge is finding out what researchers actually need and how they can use our tools in their work.</p>
+<p>At SURF, we build tools that fit in the workflow of researchers. Our biggest challenge is finding out what researchers actually need and how they can use our tools in their work.</p>
 </blockquote>
 <p><strong>That’s the role of research engineers</strong></p>
+
 <aside class="notes">
 <ul>
-<li>sometimes (SURF) products align with those needs, sometimes not; then we need to solve it</li>
+<li>sometimes services/products align with those needs, sometimes not; then we need to solve it</li>
 <li>bridge between IT services and researchers</li>
 </ul>
 <style type="text/css">
@@ -278,20 +290,41 @@ Max Paulus
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-</section></section>
-<section>
-<section id="research-engineer-at-fmg-1" class="title-slide slide level1 center">
-<h1>Research engineer at FMG</h1>
+<aside><div>
+<p>https://blog.esciencecenter.nl/open-science-festival-what-infrastructures-do-we-need-to-preserve-research-software-7c181404f310)</p>
+</div></aside></section>
+<section class="slide level2">
+
 <ul>
 <li>1-1 meetings</li>
 <li>Short-term projects: days/weeks</li>
 <li>Long-term projects: infrastructure development</li>
 </ul>
+<aside class="notes">
+<p>concretely:</p>
+<ul>
+<li>Test existing software and services, document</li>
+<li>Connect with (developer) community; collaborations, e.g.&nbsp;UB</li>
+<li>Extend existing software and services</li>
+<li>Build custom software, with focus on self-sufficiency</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-
 <section class="slide level2">
 
-<p><em>We act as a <strong>knowledge hub</strong> where expertise gained in temporary projects are safeguarded and used for cross-pollination across domains.</em></p>
+<blockquote>
+<p>We act as a <strong>knowledge hub</strong> where expertise gained in temporary projects are safeguarded and used for cross-pollination across domains.</p>
+</blockquote>
 <p><a href="https://www.uu.nl/en/research/research-data-management/support/research-engineers">Research engineers at Utrecht University</a></p>
 <aside class="notes">
 <ul>
@@ -313,6 +346,10 @@ Max Paulus
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+</section>
+<section class="slide level2">
+
+<video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="images/data_donation.mp4"></video>
 </section>
 <section class="slide level2">
 
@@ -610,32 +647,61 @@ Max Paulus
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-</section></section>
+</section>
+<section class="slide level2">
+
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/512px-2023_Obsidian_logo.svg.png" class="quarto-figure quarto-figure-center" height="250"></p>
+</figure>
+</div>
+
+<aside class="notes">
+<ul>
+<li>Documentation: revealing links between topics/projects/people</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<aside><div>
+<p>Stephan Ango, CC BY 4.0 <a href="https://creativecommons.org/licenses/by/4.0" class="uri">https://creativecommons.org/licenses/by/4.0</a>, via Wikimedia Commons</p>
+</div></aside></section></section>
 <section>
 <section id="what-is-research-software" class="title-slide slide level1 center">
 <h1>What is research software?</h1>
-<p><em>it [research software] <strong>contains the research process</strong>: data is collected, read, preprocessed, analyzed, visualized and simulated using research software</em> (LCRDM report)</p>
-<!--
+<blockquote>
+<p>it [research software] <strong>contains the research process</strong>: data is collected, read, preprocessed, analyzed, visualized and simulated using research software</p>
+</blockquote>
+<p>(LCRDM report)</p>
+</section>
+<section class="slide level2">
 
----
+<!--
 
 <iframe class="stretch" data-src="https://jupyter.org/try-jupyter/lab/"></iframe>
 
----
 
+
+
+---
 -->
-</section>
-<section id="software-is-a-form-of-data" class="slide level2">
-<h2>Software is a form of data</h2>
-<ul>
-<li>can be stored, loaded, processed</li>
-<li>used as input or output (of other software)</li>
-<li>complex type of data
+<p><strong>Software is a form of data</strong></p>
+<p>It can be stored, loaded, processed</p>
+<p>Used as input or output (of other software)</p>
+<p>--</p>
+<p>But: complex type of data</p>
 <ul>
 <li>needs (more) context</li>
 <li>has dependencies</li>
 <li>requires maintenance</li>
-</ul></li>
 </ul>
 
 <aside class="notes">
@@ -656,7 +722,7 @@ Max Paulus
           display:block!important;
       }</style></aside>
 <aside><div>
-<p>Adapted from Netherlands eScience Center, CC-BY 4.0</p>
+<p>Netherlands eScience Center, CC-BY 4.0</p>
 </div></aside></section></section>
 <section>
 <section id="infrastructure-software" class="title-slide slide level1 center">
@@ -670,17 +736,23 @@ Max Paulus
 </section>
 <section class="slide level2">
 
-<p><em>Free, publicly available source code is the infrastructure on which all of digital society relies. It is vital to the functioning of governments, private companies, and individual lives.</em></p>
-<p><a href="https://www.fordfoundation.org/work/learning/research-reports/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure/">Ford Foundation</a></p>
+<blockquote>
+<p>Free, publicly available source code is the infrastructure on which all of digital society relies. It is vital to the functioning of governments, private companies, and individual lives.</p>
+</blockquote>
+
+<aside><div>
+<p><a href="https://www.fordfoundation.org/work/learning/research-reports/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure/">Roads and Bridges: The Unseen Labor Behind Our Digital Infrastructure</a></p>
+</div></aside></section>
+<section class="slide level2">
+
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/dependency.png" height="450"></p>
-<figcaption>xkcd.com</figcaption>
+<p><img data-src="images/dependency.png" class="quarto-figure quarto-figure-center" height="450"></p>
 </figure>
 </div>
 
 <aside><div>
-
+<p><a href="https://xkcd.com/2347/">xkcd.com</a></p>
 </div></aside></section>
 <section class="slide level2">
 
@@ -689,7 +761,10 @@ Max Paulus
 <p><img data-src="images/dependency_disappeared.png" class="quarto-figure quarto-figure-center" height="450"></p>
 </figure>
 </div>
-</section>
+
+<aside><div>
+<p><a href="https://www.youtube.com/watch?v=lASLZ9TgXyc">Building the Hundred-Year Web Service with htmx</a></p>
+</div></aside></section>
 <section class="slide level2">
 
 <p>JupyterLab</p>
@@ -698,105 +773,159 @@ Max Paulus
 <div>
 <p></p><figure class=""><p></p>
 <div>
-<svg width="960" height="480" viewbox="0.00 0.00 451.11 332.00" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none; display: block; margin: auto auto auto auto">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 328)">
+<svg width="960" height="480" viewbox="0.00 0.00 445.11 404.00" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none; display: block; margin: auto auto auto auto">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 400)">
 <title>G</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-328 447.11,-328 447.11,4 -4,4"></polygon>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-400 441.11,-400 441.11,4 -4,4"></polygon>
 <!-- nb -->
 <g id="node1" class="node">
 <title>nb</title>
-<ellipse fill="lightgrey" stroke="black" cx="48.58" cy="-306" rx="46.95" ry="18"></ellipse>
-<text text-anchor="middle" x="48.58" y="-301.8" font-family="Times,serif" font-size="14.00">notebook</text>
+<ellipse fill="lightgrey" stroke="black" cx="207.58" cy="-378" rx="46.95" ry="18"></ellipse>
+<text text-anchor="middle" x="207.58" y="-373.8" font-family="Times,serif" font-size="14.00">notebook</text>
 </g>
-<!-- javascript -->
+<!-- ts -->
 <g id="node2" class="node">
-<title>javascript</title>
-<ellipse fill="none" stroke="black" cx="48.58" cy="-234" rx="48.65" ry="18"></ellipse>
-<text text-anchor="middle" x="48.58" y="-229.8" font-family="Times,serif" font-size="14.00">javascript</text>
+<title>ts</title>
+<ellipse fill="none" stroke="black" cx="48.58" cy="-306" rx="48.65" ry="18"></ellipse>
+<text text-anchor="middle" x="48.58" y="-301.8" font-family="Times,serif" font-size="14.00">javascript</text>
 </g>
-<!-- nb&#45;&gt;javascript -->
+<!-- nb&#45;&gt;ts -->
 <g id="edge1" class="edge">
-<title>nb-&gt;javascript</title>
-<path fill="none" stroke="black" d="M48.58,-287.7C48.58,-279.98 48.58,-270.71 48.58,-262.11"></path>
-<polygon fill="black" stroke="black" points="52.08,-262.1 48.58,-252.1 45.08,-262.1 52.08,-262.1"></polygon>
+<title>nb-&gt;ts</title>
+<path fill="none" stroke="black" d="M178.04,-364C152.74,-352.86 116.07,-336.71 88.21,-324.45"></path>
+<polygon fill="black" stroke="black" points="89.32,-321.12 78.76,-320.29 86.5,-327.52 89.32,-321.12"></polygon>
+</g>
+<!-- html -->
+<g id="node3" class="node">
+<title>html</title>
+<ellipse fill="none" stroke="black" cx="158.58" cy="-306" rx="43.46" ry="18"></ellipse>
+<text text-anchor="middle" x="158.58" y="-301.8" font-family="Times,serif" font-size="14.00">html/css</text>
+</g>
+<!-- nb&#45;&gt;html -->
+<g id="edge3" class="edge">
+<title>nb-&gt;html</title>
+<path fill="none" stroke="black" d="M195.96,-360.41C189.98,-351.87 182.57,-341.28 175.93,-331.79"></path>
+<polygon fill="black" stroke="black" points="178.71,-329.66 170.1,-323.47 172.97,-333.67 178.71,-329.66"></polygon>
 </g>
 <!-- pandas -->
-<g id="node3" class="node">
-<title>pandas</title>
-<ellipse fill="none" stroke="black" cx="152.58" cy="-306" rx="37.71" ry="18"></ellipse>
-<text text-anchor="middle" x="152.58" y="-301.8" font-family="Times,serif" font-size="14.00">pandas</text>
-</g>
-<!-- numpy -->
-<g id="node4" class="node">
-<title>numpy</title>
-<ellipse fill="none" stroke="black" cx="152.58" cy="-234" rx="37.72" ry="18"></ellipse>
-<text text-anchor="middle" x="152.58" y="-229.8" font-family="Times,serif" font-size="14.00">numpy</text>
-</g>
-<!-- pandas&#45;&gt;numpy -->
-<g id="edge2" class="edge">
-<title>pandas-&gt;numpy</title>
-<path fill="none" stroke="black" d="M152.58,-287.7C152.58,-279.98 152.58,-270.71 152.58,-262.11"></path>
-<polygon fill="black" stroke="black" points="156.08,-262.1 152.58,-252.1 149.08,-262.1 156.08,-262.1"></polygon>
-</g>
-<!-- python -->
-<g id="node5" class="node">
-<title>python</title>
-<ellipse fill="none" stroke="black" cx="276.58" cy="-162" rx="37.72" ry="18"></ellipse>
-<text text-anchor="middle" x="276.58" y="-157.8" font-family="Times,serif" font-size="14.00">python</text>
-</g>
-<!-- numpy&#45;&gt;python -->
-<g id="edge3" class="edge">
-<title>numpy-&gt;python</title>
-<path fill="none" stroke="black" d="M176.19,-219.67C195.5,-208.77 222.99,-193.25 244.32,-181.21"></path>
-<polygon fill="black" stroke="black" points="246.06,-184.25 253.05,-176.28 242.62,-178.15 246.06,-184.25"></polygon>
-</g>
-<!-- os -->
-<g id="node8" class="node">
-<title>os</title>
-<ellipse fill="none" stroke="black" cx="276.58" cy="-90" rx="99.61" ry="18"></ellipse>
-<text text-anchor="middle" x="276.58" y="-85.8" font-family="Times,serif" font-size="14.00">windows/linux/macOS</text>
-</g>
-<!-- python&#45;&gt;os -->
-<g id="edge6" class="edge">
-<title>python-&gt;os</title>
-<path fill="none" stroke="black" d="M276.58,-143.7C276.58,-135.98 276.58,-126.71 276.58,-118.11"></path>
-<polygon fill="black" stroke="black" points="280.08,-118.1 276.58,-108.1 273.08,-118.1 280.08,-118.1"></polygon>
-</g>
-<!-- ipk -->
 <g id="node6" class="node">
-<title>ipk</title>
-<ellipse fill="none" stroke="black" cx="276.58" cy="-234" rx="67.78" ry="18"></ellipse>
-<text text-anchor="middle" x="276.58" y="-229.8" font-family="Times,serif" font-size="14.00">ipython-kernel</text>
+<title>pandas</title>
+<ellipse fill="none" stroke="black" cx="257.58" cy="-306" rx="37.71" ry="18"></ellipse>
+<text text-anchor="middle" x="257.58" y="-301.8" font-family="Times,serif" font-size="14.00">pandas</text>
 </g>
-<!-- ipk&#45;&gt;python -->
-<g id="edge4" class="edge">
-<title>ipk-&gt;python</title>
-<path fill="none" stroke="black" d="M276.58,-215.7C276.58,-207.98 276.58,-198.71 276.58,-190.11"></path>
-<polygon fill="black" stroke="black" points="280.08,-190.1 276.58,-180.1 273.08,-190.1 280.08,-190.1"></polygon>
+<!-- nb&#45;&gt;pandas -->
+<g id="edge6" class="edge">
+<title>nb-&gt;pandas</title>
+<path fill="none" stroke="black" d="M219.42,-360.41C225.53,-351.87 233.09,-341.28 239.87,-331.79"></path>
+<polygon fill="black" stroke="black" points="242.85,-333.64 245.81,-323.47 237.15,-329.57 242.85,-333.64"></polygon>
 </g>
 <!-- tornado -->
 <g id="node7" class="node">
 <title>tornado</title>
-<ellipse fill="none" stroke="black" cx="402.58" cy="-234" rx="40.57" ry="18"></ellipse>
-<text text-anchor="middle" x="402.58" y="-229.8" font-family="Times,serif" font-size="14.00">tornado</text>
+<ellipse fill="none" stroke="black" cx="396.58" cy="-234" rx="40.57" ry="18"></ellipse>
+<text text-anchor="middle" x="396.58" y="-229.8" font-family="Times,serif" font-size="14.00">tornado</text>
 </g>
-<!-- tornado&#45;&gt;python -->
+<!-- nb&#45;&gt;tornado -->
+<g id="edge7" class="edge">
+<title>nb-&gt;tornado</title>
+<path fill="none" stroke="black" d="M236.81,-363.6C256.73,-353.87 283.25,-339.7 304.58,-324 331.16,-304.43 357.87,-277.61 375.6,-258.54"></path>
+<polygon fill="black" stroke="black" points="378.22,-260.87 382.4,-251.14 373.06,-256.14 378.22,-260.87"></polygon>
+</g>
+<!-- browser -->
+<g id="node4" class="node">
+<title>browser</title>
+<ellipse fill="none" stroke="black" cx="48.58" cy="-234" rx="42.29" ry="18"></ellipse>
+<text text-anchor="middle" x="48.58" y="-229.8" font-family="Times,serif" font-size="14.00">browser</text>
+</g>
+<!-- ts&#45;&gt;browser -->
+<g id="edge2" class="edge">
+<title>ts-&gt;browser</title>
+<path fill="none" stroke="black" d="M48.58,-287.7C48.58,-279.98 48.58,-270.71 48.58,-262.11"></path>
+<polygon fill="black" stroke="black" points="52.08,-262.1 48.58,-252.1 45.08,-262.1 52.08,-262.1"></polygon>
+</g>
+<!-- html&#45;&gt;browser -->
+<g id="edge4" class="edge">
+<title>html-&gt;browser</title>
+<path fill="none" stroke="black" d="M135.78,-290.5C119.71,-280.27 97.96,-266.43 80.21,-255.13"></path>
+<polygon fill="black" stroke="black" points="81.65,-251.9 71.34,-249.49 77.9,-257.81 81.65,-251.9"></polygon>
+</g>
+<!-- os -->
+<g id="node5" class="node">
+<title>os</title>
+<ellipse fill="none" stroke="black" cx="159.58" cy="-90" rx="66.65" ry="18"></ellipse>
+<text text-anchor="middle" x="159.58" y="-85.8" font-family="Times,serif" font-size="14.00">win/linux/mac</text>
+</g>
+<!-- browser&#45;&gt;os -->
 <g id="edge5" class="edge">
-<title>tornado-&gt;python</title>
-<path fill="none" stroke="black" d="M378.28,-219.5C358.63,-208.59 330.78,-193.12 309.19,-181.12"></path>
-<polygon fill="black" stroke="black" points="310.81,-178.01 300.37,-176.22 307.41,-184.13 310.81,-178.01"></polygon>
+<title>browser-&gt;os</title>
+<path fill="none" stroke="black" d="M61.31,-216.71C80.59,-192.05 117.34,-145.03 140.03,-116.01"></path>
+<polygon fill="black" stroke="black" points="142.9,-118.01 146.3,-107.98 137.39,-113.7 142.9,-118.01"></polygon>
 </g>
 <!-- platform -->
-<g id="node9" class="node">
+<g id="node11" class="node">
 <title>platform</title>
-<ellipse fill="none" stroke="black" cx="276.58" cy="-18" rx="27" ry="18"></ellipse>
-<text text-anchor="middle" x="276.58" y="-13.8" font-family="Times,serif" font-size="14.00">?</text>
+<ellipse fill="none" stroke="black" cx="159.58" cy="-18" rx="27" ry="18"></ellipse>
+<text text-anchor="middle" x="159.58" y="-13.8" font-family="Times,serif" font-size="14.00">?</text>
 </g>
 <!-- os&#45;&gt;platform -->
-<g id="edge7" class="edge">
+<g id="edge14" class="edge">
 <title>os-&gt;platform</title>
-<path fill="none" stroke="black" d="M276.58,-71.7C276.58,-63.98 276.58,-54.71 276.58,-46.11"></path>
-<polygon fill="black" stroke="black" points="280.08,-46.1 276.58,-36.1 273.08,-46.1 280.08,-46.1"></polygon>
+<path fill="none" stroke="black" d="M159.58,-71.7C159.58,-63.98 159.58,-54.71 159.58,-46.11"></path>
+<polygon fill="black" stroke="black" points="163.08,-46.1 159.58,-36.1 156.08,-46.1 163.08,-46.1"></polygon>
+</g>
+<!-- numpy -->
+<g id="node8" class="node">
+<title>numpy</title>
+<ellipse fill="none" stroke="black" cx="146.58" cy="-234" rx="37.72" ry="18"></ellipse>
+<text text-anchor="middle" x="146.58" y="-229.8" font-family="Times,serif" font-size="14.00">numpy</text>
+</g>
+<!-- pandas&#45;&gt;numpy -->
+<g id="edge8" class="edge">
+<title>pandas-&gt;numpy</title>
+<path fill="none" stroke="black" d="M235.65,-291.17C218.92,-280.62 195.68,-265.97 177.14,-254.27"></path>
+<polygon fill="black" stroke="black" points="178.79,-251.17 168.46,-248.8 175.05,-257.1 178.79,-251.17"></polygon>
+</g>
+<!-- ipk -->
+<g id="node10" class="node">
+<title>ipk</title>
+<ellipse fill="none" stroke="black" cx="270.58" cy="-234" rx="67.78" ry="18"></ellipse>
+<text text-anchor="middle" x="270.58" y="-229.8" font-family="Times,serif" font-size="14.00">ipython-kernel</text>
+</g>
+<!-- pandas&#45;&gt;ipk -->
+<g id="edge10" class="edge">
+<title>pandas-&gt;ipk</title>
+<path fill="none" stroke="black" d="M260.72,-288.05C262.15,-280.35 263.88,-271.03 265.49,-262.36"></path>
+<polygon fill="black" stroke="black" points="268.98,-262.75 267.37,-252.28 262.1,-261.47 268.98,-262.75"></polygon>
+</g>
+<!-- python -->
+<g id="node9" class="node">
+<title>python</title>
+<ellipse fill="none" stroke="black" cx="208.58" cy="-162" rx="37.72" ry="18"></ellipse>
+<text text-anchor="middle" x="208.58" y="-157.8" font-family="Times,serif" font-size="14.00">python</text>
+</g>
+<!-- tornado&#45;&gt;python -->
+<g id="edge12" class="edge">
+<title>tornado-&gt;python</title>
+<path fill="none" stroke="black" d="M366.37,-221.75C333.92,-209.67 282.27,-190.44 246.97,-177.29"></path>
+<polygon fill="black" stroke="black" points="248.06,-173.97 237.47,-173.76 245.62,-180.53 248.06,-173.97"></polygon>
+</g>
+<!-- numpy&#45;&gt;python -->
+<g id="edge9" class="edge">
+<title>numpy-&gt;python</title>
+<path fill="none" stroke="black" d="M160.64,-217.12C168.65,-208.08 178.83,-196.58 187.75,-186.52"></path>
+<polygon fill="black" stroke="black" points="190.55,-188.63 194.56,-178.82 185.31,-183.99 190.55,-188.63"></polygon>
+</g>
+<!-- python&#45;&gt;os -->
+<g id="edge13" class="edge">
+<title>python-&gt;os</title>
+<path fill="none" stroke="black" d="M197.21,-144.76C191.32,-136.35 184,-125.89 177.38,-116.44"></path>
+<polygon fill="black" stroke="black" points="180.16,-114.31 171.56,-108.12 174.43,-118.32 180.16,-114.31"></polygon>
+</g>
+<!-- ipk&#45;&gt;python -->
+<g id="edge11" class="edge">
+<title>ipk-&gt;python</title>
+<path fill="none" stroke="black" d="M255.88,-216.41C247.97,-207.48 238.08,-196.31 229.39,-186.5"></path>
+<polygon fill="black" stroke="black" points="231.99,-184.15 222.74,-178.99 226.75,-188.79 231.99,-184.15"></polygon>
 </g>
 </g>
 </svg>
@@ -805,8 +934,21 @@ Max Paulus
 </div>
 </div>
 </div>
+<aside class="notes">
+<p>The ?</p>
+<p>If we can’t run this on our private laptop (sensitive data), more layers of software are needed</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-
 <section class="slide level2">
 
 <p><strong>Secure ANalysis Environment</strong>: <a href="https://www.surf.nl/en/themes/research-infrastructure/sane-secure-environment-for-analysing-sensitive-data">SANE</a></p>
@@ -815,89 +957,81 @@ Max Paulus
 <div>
 <p></p><figure class=""><p></p>
 <div>
-<svg width="960" height="480" viewbox="0.00 0.00 310.00 188.00" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none; display: block; margin: auto auto auto auto">
+<svg width="960" height="480" viewbox="0.00 0.00 350.95 188.00" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none; display: block; margin: auto auto auto auto">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
 <title>G</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-184 306,-184 306,4 -4,4"></polygon>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-184 346.95,-184 346.95,4 -4,4"></polygon>
 <g id="clust1" class="cluster">
 <title>cluster</title>
-<polygon fill="lightgrey" stroke="black" points="8,-64 8,-116 132,-116 132,-64 8,-64"></polygon>
+<polygon fill="lightgrey" stroke="black" points="30.7,-64 30.7,-116 154.7,-116 154.7,-64 30.7,-64"></polygon>
 </g>
 <g id="clust2" class="cluster">
 <title>cluster0</title>
-<polygon fill="lightgrey" stroke="lightgrey" points="140,-64 140,-116 294,-116 294,-64 140,-64"></polygon>
 </g>
 <!-- jl -->
 <g id="node1" class="node">
 <title>jl</title>
-<ellipse fill="none" stroke="black" cx="70" cy="-90" rx="54.46" ry="18"></ellipse>
-<text text-anchor="middle" x="70" y="-85.8" font-family="Times,serif" font-size="14.00">JupyterLab</text>
+<ellipse fill="none" stroke="black" cx="92.7" cy="-90" rx="54.46" ry="18"></ellipse>
+<text text-anchor="middle" x="92.7" y="-85.8" font-family="Times,serif" font-size="14.00">JupyterLab</text>
+</g>
+<!-- internet -->
+<g id="node3" class="node">
+<title>internet</title>
+<ellipse fill="none" stroke="black" cx="159.7" cy="-162" rx="40.56" ry="18"></ellipse>
+<text text-anchor="middle" x="159.7" y="-157.8" font-family="Times,serif" font-size="14.00">internet</text>
+</g>
+<!-- jl&#45;&#45;internet -->
+<g id="edge2" class="edge">
+<title>jl--internet</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M102.91,-107.79C112.84,-119.48 127.7,-134.92 139.86,-146.15"></path>
 </g>
 <!-- ds -->
-<g id="node3" class="node">
+<g id="node4" class="node">
 <title>ds</title>
-<ellipse fill="none" stroke="black" cx="88" cy="-18" rx="53.25" ry="18"></ellipse>
-<text text-anchor="middle" x="88" y="-13.8" font-family="Times,serif" font-size="14.00">data server</text>
 </g>
-<!-- jl&#45;&gt;ds -->
-<g id="edge3" class="edge">
-<title>jl-&gt;ds</title>
-<path fill="none" stroke="black" d="M74.36,-72.05C76.36,-64.26 78.79,-54.82 81.04,-46.08"></path>
-<polygon fill="black" stroke="black" points="84.46,-46.83 83.56,-36.28 77.68,-45.09 84.46,-46.83"></polygon>
+<!-- jl&#45;&#45;ds -->
+<g id="edge5" class="edge">
+<title>jl--ds</title>
 </g>
 <!-- researcher -->
 <g id="node2" class="node">
 <title>researcher</title>
-<ellipse fill="none" stroke="black" cx="70" cy="-162" rx="50.9" ry="18"></ellipse>
-<text text-anchor="middle" x="70" y="-157.8" font-family="Times,serif" font-size="14.00">researcher</text>
+<ellipse fill="none" stroke="black" cx="50.7" cy="-162" rx="50.9" ry="18"></ellipse>
+<text text-anchor="middle" x="50.7" y="-157.8" font-family="Times,serif" font-size="14.00">researcher</text>
 </g>
-<!-- researcher&#45;&gt;jl -->
+<!-- researcher&#45;&#45;jl -->
 <g id="edge1" class="edge">
-<title>researcher-&gt;jl</title>
-<path fill="none" stroke="black" d="M70,-143.7C70,-135.98 70,-126.71 70,-118.11"></path>
-<polygon fill="black" stroke="black" points="73.5,-118.1 70,-108.1 66.5,-118.1 73.5,-118.1"></polygon>
+<title>researcher--jl</title>
+<path fill="none" stroke="black" d="M60.87,-144.05C67.47,-133.05 76.04,-118.76 82.63,-107.79"></path>
+</g>
+<!-- internet&#45;&#45;jl -->
+<g id="edge3" class="edge">
+<title>internet--jl</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M149.66,-144.41C140,-133.01 125.56,-117.97 113.52,-106.75"></path>
 </g>
 <!-- ps -->
-<g id="node4" class="node">
-<title>ps</title>
-<ellipse fill="none" stroke="black" cx="217" cy="-90" rx="68.88" ry="18"></ellipse>
-<text text-anchor="middle" x="217" y="-85.8" font-family="Times,serif" font-size="14.00">provider portal</text>
-</g>
-<!-- ps&#45;&gt;ds -->
-<g id="edge4" class="edge">
-<title>ps-&gt;ds</title>
-<path fill="none" stroke="black" d="M188.37,-73.46C169.45,-63.2 144.48,-49.65 124.18,-38.63"></path>
-<polygon fill="black" stroke="black" points="125.68,-35.47 115.22,-33.77 122.34,-41.62 125.68,-35.47"></polygon>
-</g>
-<!-- internet -->
-<g id="node6" class="node">
-<title>internet</title>
-<ellipse fill="none" stroke="black" cx="217" cy="-18" rx="40.56" ry="18"></ellipse>
-<text text-anchor="middle" x="217" y="-13.8" font-family="Times,serif" font-size="14.00">internet</text>
-</g>
-<!-- ps&#45;&gt;internet -->
-<g id="edge5" class="edge">
-<title>ps-&gt;internet</title>
-<path fill="none" stroke="black" d="M211.12,-72.05C210.3,-64.35 210.06,-55.03 210.39,-46.36"></path>
-<polygon fill="black" stroke="black" points="213.89,-46.49 211.09,-36.28 206.91,-46.01 213.89,-46.49"></polygon>
-</g>
-<!-- data provider -->
 <g id="node5" class="node">
-<title>data provider</title>
-<ellipse fill="none" stroke="black" cx="217" cy="-162" rx="62.5" ry="18"></ellipse>
-<text text-anchor="middle" x="217" y="-157.8" font-family="Times,serif" font-size="14.00">data provider</text>
+<title>ps</title>
 </g>
-<!-- data provider&#45;&gt;ps -->
-<g id="edge2" class="edge">
-<title>data provider-&gt;ps</title>
-<path fill="none" stroke="black" d="M217,-143.7C217,-135.98 217,-126.71 217,-118.11"></path>
-<polygon fill="black" stroke="black" points="220.5,-118.1 217,-108.1 213.5,-118.1 220.5,-118.1"></polygon>
+<!-- internet&#45;&#45;ps -->
+<g id="edge8" class="edge">
+<title>internet--ps</title>
 </g>
-<!-- internet&#45;&gt;ps -->
+<!-- ps&#45;&#45;internet -->
+<g id="edge7" class="edge">
+<title>ps--internet</title>
+</g>
+<!-- ps&#45;&#45;ds -->
 <g id="edge6" class="edge">
-<title>internet-&gt;ps</title>
-<path fill="none" stroke="black" d="M222.91,-36.28C223.71,-44.03 223.94,-53.36 223.59,-62.01"></path>
-<polygon fill="black" stroke="black" points="220.09,-61.83 222.88,-72.05 227.08,-62.33 220.09,-61.83"></polygon>
+<title>ps--ds</title>
+</g>
+<!-- dp -->
+<g id="node6" class="node">
+<title>dp</title>
+</g>
+<!-- dp&#45;&#45;ps -->
+<g id="edge4" class="edge">
+<title>dp--ps</title>
 </g>
 </g>
 </svg>
@@ -909,17 +1043,129 @@ Max Paulus
 </section>
 <section class="slide level2">
 
-<p>We need to understand:</p>
-<ul>
-<li>software fundamentals</li>
-<li>software management</li>
-</ul>
-<p>In order to:</p>
+<p><strong>Secure ANalysis Environment</strong>: <a href="https://www.surf.nl/en/themes/research-infrastructure/sane-secure-environment-for-analysing-sensitive-data">SANE</a></p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<svg width="960" height="480" viewbox="0.00 0.00 350.95 188.00" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none; display: block; margin: auto auto auto auto">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
+<title>G</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-184 346.95,-184 346.95,4 -4,4"></polygon>
+<g id="clust2" class="cluster">
+<title>cluster0</title>
+<polygon fill="lightgrey" stroke="lightgrey" points="162.7,-64 162.7,-116 316.7,-116 316.7,-64 162.7,-64"></polygon>
+</g>
+<g id="clust1" class="cluster">
+<title>cluster</title>
+<polygon fill="lightgrey" stroke="black" points="30.7,-64 30.7,-116 154.7,-116 154.7,-64 30.7,-64"></polygon>
+</g>
+<!-- jl -->
+<g id="node1" class="node">
+<title>jl</title>
+<ellipse fill="none" stroke="black" cx="92.7" cy="-90" rx="54.46" ry="18"></ellipse>
+<text text-anchor="middle" x="92.7" y="-85.8" font-family="Times,serif" font-size="14.00">JupyterLab</text>
+</g>
+<!-- internet -->
+<g id="node3" class="node">
+<title>internet</title>
+<ellipse fill="none" stroke="black" cx="159.7" cy="-162" rx="40.56" ry="18"></ellipse>
+<text text-anchor="middle" x="159.7" y="-157.8" font-family="Times,serif" font-size="14.00">internet</text>
+</g>
+<!-- jl&#45;&gt;internet -->
+<g id="edge2" class="edge">
+<title>jl-&gt;internet</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M102.91,-107.79C110.9,-117.19 122.08,-129.03 132.48,-139.15"></path>
+<polygon fill="black" stroke="black" points="130.2,-141.81 139.86,-146.15 135.02,-136.73 130.2,-141.81"></polygon>
+</g>
+<!-- ds -->
+<g id="node4" class="node">
+<title>ds</title>
+<ellipse fill="none" stroke="black" cx="165.7" cy="-18" rx="53.25" ry="18"></ellipse>
+<text text-anchor="middle" x="165.7" y="-13.8" font-family="Times,serif" font-size="14.00">data server</text>
+</g>
+<!-- jl&#45;&gt;ds -->
+<g id="edge5" class="edge">
+<title>jl-&gt;ds</title>
+<path fill="none" stroke="black" d="M109.63,-72.76C119.12,-63.66 131.12,-52.16 141.58,-42.13"></path>
+<polygon fill="black" stroke="black" points="144.07,-44.59 148.86,-35.15 139.22,-39.54 144.07,-44.59"></polygon>
+</g>
+<!-- researcher -->
+<g id="node2" class="node">
+<title>researcher</title>
+<ellipse fill="none" stroke="black" cx="50.7" cy="-162" rx="50.9" ry="18"></ellipse>
+<text text-anchor="middle" x="50.7" y="-157.8" font-family="Times,serif" font-size="14.00">researcher</text>
+</g>
+<!-- researcher&#45;&gt;jl -->
+<g id="edge1" class="edge">
+<title>researcher-&gt;jl</title>
+<path fill="none" stroke="black" d="M60.87,-144.05C65.82,-135.8 71.88,-125.7 77.38,-116.54"></path>
+<polygon fill="black" stroke="black" points="80.48,-118.16 82.63,-107.79 74.48,-114.56 80.48,-118.16"></polygon>
+</g>
+<!-- internet&#45;&gt;jl -->
+<g id="edge3" class="edge">
+<title>internet-&gt;jl</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M149.66,-144.41C141.88,-135.24 131.02,-123.7 120.8,-113.7"></path>
+<polygon fill="black" stroke="black" points="123.17,-111.13 113.52,-106.75 118.33,-116.19 123.17,-111.13"></polygon>
+</g>
+<!-- ps -->
+<g id="node5" class="node">
+<title>ps</title>
+<ellipse fill="none" stroke="black" cx="239.7" cy="-90" rx="68.88" ry="18"></ellipse>
+<text text-anchor="middle" x="239.7" y="-85.8" font-family="Times,serif" font-size="14.00">provider portal</text>
+</g>
+<!-- internet&#45;&gt;ps -->
+<g id="edge8" class="edge">
+<title>internet-&gt;ps</title>
+<path fill="none" stroke="black" d="M181.87,-146.5C193.54,-137.32 207.62,-125.24 219.04,-114.7"></path>
+<polygon fill="black" stroke="black" points="221.59,-117.11 226.47,-107.7 216.79,-112.01 221.59,-117.11"></polygon>
+</g>
+<!-- ps&#45;&gt;internet -->
+<g id="edge7" class="edge">
+<title>ps-&gt;internet</title>
+<path fill="none" stroke="black" d="M215.76,-106.91C204.3,-116.01 190.85,-127.6 179.91,-137.72"></path>
+<polygon fill="black" stroke="black" points="177.32,-135.35 172.46,-144.76 182.13,-140.44 177.32,-135.35"></polygon>
+</g>
+<!-- ps&#45;&gt;ds -->
+<g id="edge6" class="edge">
+<title>ps-&gt;ds</title>
+<path fill="none" stroke="black" d="M222.16,-72.41C212.6,-63.37 200.62,-52.03 190.15,-42.13"></path>
+<polygon fill="black" stroke="black" points="192.53,-39.56 182.86,-35.23 187.72,-44.64 192.53,-39.56"></polygon>
+</g>
+<!-- dp -->
+<g id="node6" class="node">
+<title>dp</title>
+<ellipse fill="none" stroke="black" cx="280.7" cy="-162" rx="62.5" ry="18"></ellipse>
+<text text-anchor="middle" x="280.7" y="-157.8" font-family="Times,serif" font-size="14.00">data provider</text>
+</g>
+<!-- dp&#45;&gt;ps -->
+<g id="edge4" class="edge">
+<title>dp-&gt;ps</title>
+<path fill="none" stroke="black" d="M270.78,-144.05C266.01,-135.92 260.2,-126 254.9,-116.94"></path>
+<polygon fill="black" stroke="black" points="257.89,-115.14 249.82,-108.28 251.85,-118.67 257.89,-115.14"></polygon>
+</g>
+</g>
+</svg>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<p><strong>Software fundamentals + software management</strong></p>
 <ul>
 <li>Make informed decisions</li>
 <li>Solve (small) issues</li>
 <li>Acknowledge open-source</li>
 </ul>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/logos.png" class="quarto-figure quarto-figure-center" height="350"></p>
+</figure>
+</div>
 <aside class="notes">
 
 <style type="text/css">
@@ -934,24 +1180,20 @@ Max Paulus
           display:block!important;
       }</style></aside>
 </section></section>
+<section>
 <section id="the-carpentries" class="title-slide slide level1 center">
 <h1>The Carpentries</h1>
-<p>What is <a href="https://carpentries.org/about-us/">the Carpentries</a>?</p>
 <p><strong>Foundational coding and data science skills for research</strong></p>
+<p><a href="https://carpentries.org/lessons/">open, community-built lessons</a></p>
 <ul>
-<li>open, community-built lessons
-<ul>
-<li>learn-by-doing</li>
-<li>live-coding</li>
-</ul></li>
+<li>learn-by-doing, live-coding</li>
 <li>train the trainer</li>
 <li>network, community</li>
 </ul>
 </section>
+<section class="slide level2">
 
-<section>
-<section id="what-can-you-learn-in-4-days" class="title-slide slide level1 center">
-<h1>What can you learn in 4 days?</h1>
+<p>What can you learn in 4 days?</p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="images/carpentries_pre_post.png" class="quarto-figure quarto-figure-center" height="450"></p>
@@ -959,7 +1201,12 @@ Max Paulus
 </div>
 <aside class="notes">
 <ul>
-<li>tendency for improving self-sufficiency skills</li>
+<li>Improving self-sufficiency skills</li>
+<li>Other feedback:
+<ul>
+<li>comfortable learning environment</li>
+<li>less so: immediate applicability</li>
+</ul></li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -975,15 +1222,6 @@ Max Paulus
 </section>
 <section class="slide level2">
 
-<p>Other feedback:</p>
-<ul>
-<li>comfortable learning environment</li>
-<li>less so: immediate applicability</li>
-</ul>
-</section></section>
-<section>
-<section id="digital-literacy" class="title-slide slide level1 center">
-<h1>Digital literacy</h1>
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="images/file-not-found.png" height="450"></p>
@@ -1006,18 +1244,21 @@ Max Paulus
 </section>
 <section class="slide level2">
 
-<p><em>As the student begins assembling their resources for the assignment, they may not be able to conveniently locate the relevant information if it is spread across web-based organizational tools, a variety of personal computer locations and devices, and bookmarked web pages</em></p>
+<blockquote>
+<p>As the student begins assembling their resources for the assignment, they may not be able to conveniently locate the relevant information if it is <strong>spread across web-based organizational tools, a variety of personal computer locations and devices, and bookmarked web pages</strong></p>
+</blockquote>
 
 <aside><div>
 <p>Cole, C., Mross, E., &amp; Pritt, A. (2024). The Myth of the ’Born Digital’: Addressing Student Computer and Digital Literacy. Journal of New Librarianship, 9(2), 1–13. https://doi.org/10.33011/newlibs/17/1</p>
 </div></aside></section>
-<section id="where-is-my-software-running" class="slide level2">
-<h2>“Where is my software running?”</h2>
-<p><strong>Understanding (infrastructure) software as components</strong></p>
+<section class="slide level2">
+
+<p><strong>“Where is my software running?”</strong></p>
+<p>(infrastructure) software as components</p>
 <p>… <a href="https://blog.esciencecenter.nl/defining-the-roles-of-research-software-21535a43f23">of instruments</a></p>
 <ul>
 <li>instruments: MRI-scanner, data donation (virtual)</li>
-<li>software components: UI, server, database, …</li>
+<li>software components: UI, server, database, Python</li>
 </ul>
 <!--
 *Or more generally, research software components organize, serve, and provide access to data*
@@ -1042,8 +1283,11 @@ Max Paulus
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-</section></section>
+</section>
+<section class="slide level2">
 
+
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
@@ -1444,6 +1688,7 @@ Max Paulus
       }
     });
     </script>
+    <script>videojs(video_shortcode_videojs_video1);</script>
     
 
 </body></html>
