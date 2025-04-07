@@ -1,5 +1,5 @@
 ---
-title: "Research Engineering Support"
+title: "Research Engineering"
 author: "Max Paulus"
 format: 
     revealjs:
@@ -10,21 +10,6 @@ format:
         mermaid:
             theme: neutral
 ---
-
-# Inspiration {visibility="hidden"}
-
-::: {.r-stack}
-
-![](images/512px-2023_Obsidian_logo.svg.png){.fragment height="300"}
-
-![](images/Labyrint_barvaux.jpg){.fragment height="300"}
-
-:::
-
-::: aside
-Stephan Ango, CC BY 4.0 <https://creativecommons.org/licenses/by/4.0>, via Wikimedia Commons
-Benoit.dessucy, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons
-:::
 
 # Agenda
 
@@ -37,37 +22,36 @@ Benoit.dessucy, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, v
 
 ![The Turing Way Community. This illustration is created by Scriberia with The Turing Way community, used under a CC-BY 4.0 licence. DOI: 10.5281/zenodo.3332807](images/researchers-environment.jpg){height="450" fig-align="center"}
 
-# Research software engineer
+::: {.notes}
+Research support roles are fluid; researchers are/become supporters and vice versa
+:::
+
+---
+
+**Research software engineer (RSE)**
 
 [LCRDM report](https://zenodo.org/records/15052095):
 
-The role of RSEs varies across Dutch institutions and projects. 
-Some are deeply embedded in research teams, **developing new software and advising researchers**
+> The role of RSEs varies across Dutch institutions and projects. 
+Some are deeply embedded in research teams, **developing new software and advising researchers**...
 
-... Others focus on **support and training, guiding researchers on software best practices**, including version control, testing, documentation, and FAIR principles.
+> Others focus on **support and training, guiding researchers on software best practices**, including version control, testing, documentation, and FAIR principles.
 
 ::: {.notes}
-This role (and research support roles in general) are hard to capture with a single title
-
-https://the-turing-way.netlify.app/collaboration/research-infrastructure-roles/rse
 :::
 
-# Other roles
-
-Data wrangler, Research application manager, Data steward
-
-## Data wrangler
+---
 
 ![](images/data-wrangler.jpg){height="450" fig-align="center"}
 
 ::: {.notes}
 
-- Data science and engineering, but with a broader view on data management, privacy and security)
+- Data science and engineering, but with a broader view on data management, privacy and security
 
 https://the-turing-way.netlify.app/collaboration/research-infrastructure-roles/data-wrangler
 :::
 
-## RAM
+---
 
 ![](images/research-application-managers.jpg){height="450" fig-align="center"}
 
@@ -77,19 +61,12 @@ https://the-turing-way.netlify.app/collaboration/research-infrastructure-roles/d
 https://the-turing-way.netlify.app/collaboration/research-infrastructure-roles/ram
 :::
 
-# And in practice? {visibility="hidden"}
-
-Constraints
-
-- Funding might not allow for hiring specialist roles
-- Ongoing projects require a number of specific skills
-- Needs might change, projects and people come and go
-
 # Research engineer at FMG
 
 RSE, data wrangler & research application manager?
 
-*This variety in roles reflects the diverse ways institutions have implemented RSE positions, tailored to their local research needs*
+> This variety in roles reflects the diverse ways institutions have implemented RSE positions, tailored to their local research needs
+
 (LCRDM report)
 
 ::: {.notes}
@@ -97,36 +74,37 @@ RSE, data wrangler & research application manager?
 
 ---
 
-[Matthijs Moed (SURF)](https://blog.esciencecenter.nl/open-science-festival-what-infrastructures-do-we-need-to-preserve-research-software-7c181404f310)
-
-> We build tools that fit in the workflow of researchers. Our biggest challenge is finding out what researchers actually need and how they can use our tools in their work.
+> At SURF, we build tools that fit in the workflow of researchers. Our biggest challenge is finding out what researchers actually need and how they can use our tools in their work.
 
 **That's the role of research engineers**
 
+::: aside
+https://blog.esciencecenter.nl/open-science-festival-what-infrastructures-do-we-need-to-preserve-research-software-7c181404f310)
+:::
+
 ::: {.notes}
-- sometimes (SURF) products align with those needs, sometimes not; then we need to solve it
+- sometimes services/products align with those needs, sometimes not; then we need to solve it
 - bridge between IT services and researchers
 :::
 
-# Research engineer at FMG
+---
 
 - 1-1 meetings
 - Short-term projects: days/weeks
 - Long-term projects: infrastructure development
 
+::: {.notes}
+concretely:
+
+- Test existing software and services, document
+- Connect with (developer) community; collaborations, e.g. UB
+- Extend existing software and services
+- Build custom software, with focus on self-sufficiency
+:::
+
 ---
 
-## Workflow {visibility="hidden"}
-
-- Find existing software (active, open-source)
-- Connect with developers/community
-- Proof of concepts
-- Extend existing software
-- Build custom software
-
----
-
-*We act as a **knowledge hub** where expertise gained in temporary projects are safeguarded and used for cross-pollination across domains.*
+> We act as a **knowledge hub** where expertise gained in temporary projects are safeguarded and used for cross-pollination across domains.
 
 [Research engineers at Utrecht University](https://www.uu.nl/en/research/research-data-management/support/research-engineers)
 
@@ -136,6 +114,10 @@ RSE, data wrangler & research application manager?
     - android app for controlling movement sensors
 - proof of concepts: be ready for when there's a need; modular: small independent components that can be stacked together if needed
 :::
+
+---
+
+{{< video images/data_donation.mp4 >}}
 
 ---
 
@@ -196,30 +178,49 @@ digraph G {
 - This is not one project, but a knowledge hub made from many projects
 :::
 
+---
+
+![](images/512px-2023_Obsidian_logo.svg.png){height="250" fig-align="center"}
+
+::: aside
+Stephan Ango, CC BY 4.0 <https://creativecommons.org/licenses/by/4.0>, via Wikimedia Commons
+:::
+
+::: {.notes}
+- Documentation: revealing links between topics/projects/people
+:::
+
 # What is research software?
 
-*it \[research software] **contains the research process**: data is collected, read, preprocessed, analyzed, visualized and simulated using research software*
+> it \[research software] **contains the research process**: data is collected, read, preprocessed, analyzed, visualized and simulated using research software
+
 (LCRDM report)
 
-<!--
 ---
+
+<!--
 
 <iframe class="stretch" data-src="https://jupyter.org/try-jupyter/lab/"></iframe>
 
 ---
 -->
 
-## Software is a form of data
+**Software is a form of data**
 
-- can be stored, loaded, processed
-- used as input or output (of other software)
-- complex type of data
-    - needs (more) context
-    - has dependencies
-    - requires maintenance
+It can be stored, loaded, processed
+
+Used as input or output (of other software)
+
+\--
+
+But: complex type of data
+
+- needs (more) context
+- has dependencies
+- requires maintenance
 
 ::: aside
-Adapted from Netherlands eScience Center, CC-BY 4.0
+Netherlands eScience Center, CC-BY 4.0
 :::
 
 ::: {.notes}
@@ -238,18 +239,27 @@ Adapted from Netherlands eScience Center, CC-BY 4.0
 
 ---
 
-*Free, publicly available source code is the infrastructure on which all of digital society relies. It is vital to the functioning of governments, private companies, and individual lives.* 
-
-[Ford Foundation](https://www.fordfoundation.org/work/learning/research-reports/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure/)
-
-![xkcd.com](images/dependency.png){height="450" fig-align="center"}
+> Free, publicly available source code is the infrastructure on which all of digital society relies. It is vital to the functioning of governments, private companies, and individual lives.
 
 ::: aside
+[Roads and Bridges: The Unseen Labor Behind Our Digital Infrastructure](https://www.fordfoundation.org/work/learning/research-reports/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure/)
+:::
+
+---
+
+![](images/dependency.png){height="450" fig-align="center"}
+
+::: aside
+[xkcd.com](https://xkcd.com/2347/)
 :::
 
 ---
 
 ![](images/dependency_disappeared.png){height="450" fig-align="center"}
+
+::: aside
+[Building the Hundred-Year Web Service with htmx](https://www.youtube.com/watch?v=lASLZ9TgXyc)
+:::
 
 ---
 
@@ -258,42 +268,59 @@ JupyterLab
 ```{dot}
 digraph G {
     nb [label="notebook", style=filled]
-    nb -> javascript;
+    ts [label="javascript"]
+    html [label="html/css"]
+    nb -> ts -> browser;
+    nb -> html -> browser; 
+    browser -> os;
+    nb -> pandas;
+    nb -> tornado;
     pandas -> numpy
     numpy -> python;
     ipk [label="ipython-kernel"];
+    pandas -> ipk;
     ipk -> python;
     tornado -> python;
     python -> os;
-    os [label="windows/linux/macOS"];
+    os [label="win/linux/mac"];
     os -> platform;
     platform [label="?"];
 }
 ```
 
+::: {.notes}
+The ? 
+
+If we can't run this on our private laptop (sensitive data), more layers of software are needed
+:::
+
 ---
 
-## {visibility="hidden"}
+**Secure ANalysis Environment**: [SANE](https://www.surf.nl/en/themes/research-infrastructure/sane-secure-environment-for-analysing-sensitive-data)
 
 ```{dot}
-digraph G {
-    app [label="?"];
-    laptop [color=red]; 
-    app -> laptop;
-    app -> cloud;
-    cloud [color=green];
-    app -> container;
-    container [color=green]
-    app -> SaaS;
-    SaaS [color=red];
-    SaaS -> cloud; 
-    container -> cloud;
+graph G {
+    subgraph cluster {
+        jl [label="JupyterLab"];
+        style=filled;
+    }
+    researcher -- jl;
+    jl -- internet [style=dashed];
+    internet -- jl [style=dashed];
+    ds [label="data server" style=invisible];
+    subgraph cluster0 {
+        ps [label="provider portal" style=invisible];
+        style=invisible;
+        color=lightgrey;
+    }
+    dp [label="data provider" style=invisible];
+    dp -- ps [style=invisible];
+    jl -- ds [style=invisible];
+    ps -- ds [style=invisible];
+    ps -- internet [style=invisible];
+    internet -- ps [style=invisible];
 }
 ```
-
-::: {.notes}
-- runs on laptop? no, needs to be on a safe/private server (SANE)
-:::
 
 ---
 
@@ -304,16 +331,18 @@ digraph G {
     subgraph cluster {
         jl [label="JupyterLab"];
         style=filled;
-        label = "";
     }
     researcher -> jl;
+    jl -> internet [style=dashed];
+    internet -> jl [style=dashed];
     ds [label="data server"];
     subgraph cluster0 {
         ps [label="provider portal"];
         style=filled;
         color=lightgrey;
     }
-    "data provider" -> ps;
+    dp [label="data provider"];
+    dp -> ps;
     jl -> ds;
     ps -> ds;
     ps -> internet;
@@ -323,49 +352,41 @@ digraph G {
 
 ---
 
-We need to understand:
-
-- software fundamentals
-- software management
-
-In order to:
+**Software fundamentals + software management**
 
 - Make informed decisions
 - Solve (small) issues
 - Acknowledge open-source
+
+![](images/logos.png){height="350" fig-align="center"}
 
 ::: {.notes}
 :::
 
 # The Carpentries
 
-What is [the Carpentries](https://carpentries.org/about-us/)?
-
 **Foundational coding and data science skills for research**
 
-- open, community-built lessons
-    - learn-by-doing 
-    - live-coding
+[open, community-built lessons](https://carpentries.org/lessons/)
+
+- learn-by-doing, live-coding
 - train the trainer
 - network, community
 
-# What can you learn in 4 days?
+---
+
+What can you learn in 4 days?
 
 ![](images/carpentries_pre_post.png){height="450" fig-align="center"}
 
 ::: {.notes}
-- tendency for improving self-sufficiency skills
+- Improving self-sufficiency skills
+- Other feedback:
+    - comfortable learning environment
+    - less so: immediate applicability
 :::
 
 ---
-
-Other feedback:
-
-- comfortable learning environment
-- less so: immediate applicability
-
-
-# Digital literacy
 
 ![https://www.theverge.com/22684730/students-file-folder-directory-structure-education-gen-z](images/file-not-found.png){height="450" fig-align="center"}
 
@@ -375,7 +396,7 @@ Other feedback:
 
 ---
 
-*As the student begins assembling their resources for the assignment, they may not be able to conveniently locate the relevant information if it is spread across web-based organizational tools, a variety of personal computer locations and devices, and bookmarked web pages*
+> As the student begins assembling their resources for the assignment, they may not be able to conveniently locate the relevant information if it is **spread across web-based organizational tools, a variety of personal computer locations and devices, and bookmarked web pages**
 
 ::: aside
 Cole, C., Mross, E., & Pritt, A. (2024). The Myth of the ’Born Digital’: Addressing Student Computer and Digital Literacy. Journal of New Librarianship, 9(2), 1–13. https://doi.org/10.33011/newlibs/17/1
@@ -383,14 +404,14 @@ Cole, C., Mross, E., & Pritt, A. (2024). The Myth of the ’Born Digital’: Add
 
 ---
 
-## "Where is my software running?"
+**"Where is my software running?"**
 
-**Understanding (infrastructure) software as components**
+(infrastructure) software as components
 
 ... [of instruments](https://blog.esciencecenter.nl/defining-the-roles-of-research-software-21535a43f23)
 
 - instruments: MRI-scanner, data donation (virtual)
-- software components: UI, server, database, ...
+- software components: UI, server, database, Python
 
 <!--
 *Or more generally, research software components organize, serve, and provide access to data*
@@ -403,9 +424,4 @@ Cole, C., Mross, E., & Pritt, A. (2024). The Myth of the ’Born Digital’: Add
     - Awareness regarding maintenance and security/privacy
 :::
 
-# Challenges {visibility="hidden"}
-
-<img src="images/Labyrint_barvaux.jpg" height="200">
-
-- lack of (good) documentation
-- terminology
+---
