@@ -91,9 +91,15 @@ https://blog.esciencecenter.nl/open-science-festival-what-infrastructures-do-we-
 
 ---
 
+**How we work**
+
 - 1-1 meetings
 - Short-term projects: days/weeks
 - Long-term projects: infrastructure development
+
+::: aside
+https://www.bsl.socsci.uva.nl/
+:::
 
 ::: {.notes}
 concretely:
@@ -108,7 +114,9 @@ concretely:
 
 > We act as a **knowledge hub** where expertise gained in temporary projects are safeguarded and used for cross-pollination across domains.
 
-[Research engineers at Utrecht University](https://www.uu.nl/en/research/research-data-management/support/research-engineers)
+::: aside
+https://www.uu.nl/en/research/research-data-management/support/research-engineers
+:::
 
 ::: {.notes}
 - recent examples: 
@@ -127,42 +135,14 @@ concretely:
 
 ```{dot}
 digraph G {
-    dd[label="data donation"];
-    ws[label=""];
-    st[label=""];
-    dp[label=""];
-    ho[label=""];
-    cp[label=""];
-    db[label=""];
-    dm[label=""];
-    ds[label=""]
-    
-    dd -> ws -> st;
-    dd -> dp -> db -> dm;
-    dp -> cp;
-    dd -> ho;
-    ws -> ho;
-    db -> ho;
-    ds -> ho;
-    st -> ho;
-    dm -> ds;
-
-}
-}
-```
-
----
-
-```{dot}
-digraph G {
-    dd[label="data donation"];
+    dd[label="data donation" style=filled];
     ws[label="web scraping"];
     st[label="storage"];
     dp[label="data processing"];
     ho[label="infrastructure/cloud"];
-    cp[label="compute/AI"];
+    cp[label="compute/llm"];
     db[label="databases"];
-    dm[label="data models"];
+    dm[label="models"];
     ds[label="dashboards"]
     
     dd -> ws -> st;
@@ -197,15 +177,13 @@ digraph G {
 ---
 -->
 
-**Software is a form of data**
+**Software is a (complex) form of data**
 
-It can be stored, loaded, processed
+- it can be stored, loaded, processed
 
-Used as input or output (of other software)
+- used as input or output (of other software)
 
-\--
-
-But: complex type of data
+But:
 
 - needs (more) context
 - has dependencies
@@ -246,16 +224,12 @@ https://blog.esciencecenter.nl/defining-the-roles-of-research-software-21535a43f
 ![](images/dependency.png){height="450" fig-align="center"}
 
 ::: aside
-[xkcd.com](https://xkcd.com/2347/)
+https://xkcd.com/2347/
 :::
 
 ---
 
 ![](images/dependency_disappeared.png){height="450" fig-align="center"}
-
-::: aside
-[Building the Hundred-Year Web Service with htmx](https://www.youtube.com/watch?v=lASLZ9TgXyc)
-:::
 
 ---
 
