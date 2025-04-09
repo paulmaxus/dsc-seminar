@@ -98,7 +98,7 @@ https://blog.esciencecenter.nl/open-science-festival-what-infrastructures-do-we-
 - Long-term projects: infrastructure development
 
 ::: aside
-https://www.bsl.socsci.uva.nl/
+https://www.bsl.socsci.uva.nl/research-engineering/
 :::
 
 ::: {.notes}
@@ -190,7 +190,7 @@ But:
 - requires maintenance
 
 ::: aside
-Netherlands eScience Center, CC-BY 4.0
+https://esciencecenter-digital-skills.github.io/research-software-support/modules/researchsoftware/slides-software
 :::
 
 ::: {.notes}
@@ -335,8 +335,7 @@ Make informed decisions, solve (small) issues, acknowledge open-source
 
 **Foundational coding and data science skills for research**
 
-[open, community-built lessons](https://carpentries.org/lessons/)
-
+- [open, community-built lessons](https://carpentries.org/lessons/)
 - learn-by-doing, live-coding
 - train the trainer
 - network, community
