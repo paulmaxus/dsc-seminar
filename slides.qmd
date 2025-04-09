@@ -1,14 +1,13 @@
 ---
 title: "Research Engineering"
-author: "Max Paulus"
+author: "Max Paulus (FMG Research Lab)"
 format: 
     revealjs:
         incremental: false
         theme: default
         pdf-separate-fragments: true
         navigation-mode: vertical
-        mermaid:
-            theme: neutral
+
 ---
 
 # Agenda
@@ -30,12 +29,11 @@ Research support roles are fluid; researchers are/become supporters and vice ver
 
 **Research software engineer (RSE)**
 
-[LCRDM report](https://zenodo.org/records/15052095):
+LCRDM report: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15052095.svg)](https://doi.org/10.5281/zenodo.15052095)
 
 > The role of RSEs varies across Dutch institutions and projects. 
-Some are deeply embedded in research teams, **developing new software and advising researchers**...
-
-> Others focus on **support and training, guiding researchers on software best practices**, including version control, testing, documentation, and FAIR principles.
+Some are **deeply embedded in research teams**, developing new software and advising researchers...
+Others focus on **support and training, guiding researchers on software best practices**, including version control, testing, documentation, and FAIR principles.
 
 ::: {.notes}
 :::
@@ -61,15 +59,19 @@ https://the-turing-way.netlify.app/collaboration/research-infrastructure-roles/d
 https://the-turing-way.netlify.app/collaboration/research-infrastructure-roles/ram
 :::
 
-# Research engineer at FMG
+---
 
-RSE, data wrangler & research application manager?
+**Research engineer at FMG**
 
-> This variety in roles reflects the diverse ways institutions have implemented RSE positions, tailored to their local research needs
+\= RSE
 
-(LCRDM report)
+\+ Data wrangler
 
-::: {.notes}
+\+ Research application manager?
+
+
+::: aside
+https://lab-fmg.uva.nl/
 :::
 
 ---
@@ -79,7 +81,7 @@ RSE, data wrangler & research application manager?
 **That's the role of research engineers**
 
 ::: aside
-https://blog.esciencecenter.nl/open-science-festival-what-infrastructures-do-we-need-to-preserve-research-software-7c181404f310)
+https://blog.esciencecenter.nl/open-science-festival-what-infrastructures-do-we-need-to-preserve-research-software-7c181404f310
 :::
 
 ::: {.notes}
@@ -116,6 +118,8 @@ concretely:
 :::
 
 ---
+
+**Data donation**
 
 {{< video images/data_donation.mp4 >}}
 
@@ -178,18 +182,6 @@ digraph G {
 - This is not one project, but a knowledge hub made from many projects
 :::
 
----
-
-![](images/512px-2023_Obsidian_logo.svg.png){height="250" fig-align="center"}
-
-::: aside
-Stephan Ango, CC BY 4.0 <https://creativecommons.org/licenses/by/4.0>, via Wikimedia Commons
-:::
-
-::: {.notes}
-- Documentation: revealing links between topics/projects/people
-:::
-
 # What is research software?
 
 > it \[research software] **contains the research process**: data is collected, read, preprocessed, analyzed, visualized and simulated using research software
@@ -229,13 +221,17 @@ Netherlands eScience Center, CC-BY 4.0
 - requires [maintenance](https://esciencecenter-digital-skills.github.io/research-software-support/modules/researchsoftware/slides-software#/4/4), is dynamic
 :::
 
-# Infrastructure software
+---
+
+**Infrastructure software**
 
 - Programming languages and compilers
 - (Generic) software libraries
 - Code repositories, data repositories
 
-[The Future of Research Software Workshop](https://blog.esciencecenter.nl/defining-the-roles-of-research-software-21535a43f23)
+::: aside
+https://blog.esciencecenter.nl/defining-the-roles-of-research-software-21535a43f23
+:::
 
 ---
 
@@ -352,15 +348,13 @@ digraph G {
 
 ---
 
-**Software fundamentals + software management**
+**Software fundamentals + management**
 
-- Make informed decisions
-- Solve (small) issues
-- Acknowledge open-source
-
-![](images/logos.png){height="350" fig-align="center"}
+![](images/logos_trans.png){height="450" fig-align="center"}
 
 ::: {.notes}
+Make informed decisions, solve (small) issues, acknowledge open-source
+
 :::
 
 # The Carpentries
@@ -375,7 +369,7 @@ digraph G {
 
 ---
 
-What can you learn in 4 days?
+**What can you learn in 4 days?**
 
 ![](images/carpentries_pre_post.png){height="450" fig-align="center"}
 
@@ -388,40 +382,25 @@ What can you learn in 4 days?
 
 ---
 
-![https://www.theverge.com/22684730/students-file-folder-directory-structure-education-gen-z](images/file-not-found.png){height="450" fig-align="center"}
-
-::: {.notes}
-
-:::
-
----
-
 > As the student begins assembling their resources for the assignment, they may not be able to conveniently locate the relevant information if it is **spread across web-based organizational tools, a variety of personal computer locations and devices, and bookmarked web pages**
 
 ::: aside
 Cole, C., Mross, E., & Pritt, A. (2024). The Myth of the ’Born Digital’: Addressing Student Computer and Digital Literacy. Journal of New Librarianship, 9(2), 1–13. https://doi.org/10.33011/newlibs/17/1
 :::
 
----
-
-**"Where is my software running?"**
-
-(infrastructure) software as components
-
-... [of instruments](https://blog.esciencecenter.nl/defining-the-roles-of-research-software-21535a43f23)
-
-- instruments: MRI-scanner, data donation (virtual)
-- software components: UI, server, database, Python
-
-<!--
-*Or more generally, research software components organize, serve, and provide access to data*
--->
-
 ::: {.notes}
-- What applies to data (previous slide), also applies to software
+- What applies to data also applies to software
 - Understanding components improves
     - Solving problems self-suffciently
     - Awareness regarding maintenance and security/privacy
+:::
+
+---
+
+![](images/file-not-found.png){height="450" fig-align="center"}
+
+::: aside
+https://www.theverge.com/22684730/students-file-folder-directory-structure-education-gen-z
 :::
 
 ---
